@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Children's and Dental Hospital - Allagadda</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Outfit','sans-serif'],serif:['Roboto Slab','serif']},colors:{tealBrand:{50:'#e0f7fa',100:'#b2ebf2',400:'#26c6da',500:'#00bcd4',600:'#00acc1',700:'#0097a7',800:'#00838f',900:'#006064'},navyDark:'#0b1329'}}}}</script>
+<style>
+/* CM001 - Global Elements */
+body, input, select, button, textarea { font-family: 'Outfit', 'Roboto Slab', sans-serif; }
+
+/* CM002 - Icons */
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular { font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important; font-style: normal; }
+
+/* CM003 - Scroll and Effects */
+.dynamic-scroll-bg { transition: background-color 0.8s ease, border-color 0.8s ease; }
+.glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); }
+.glass-dark { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); }
+.hero-gradient { background: linear-gradient(135deg, rgba(0, 96, 100, 0.96) 0%, rgba(11, 19, 41, 0.98) 100%), url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; }
+.animated-pulse-glow { box-shadow: 0 0 20px rgba(0, 188, 212, 0.4); }
+
+/* CM004 - Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #00acc1; border-radius: 4px; }
+</style>
+</head>
+<body id="pageBody" class="bg-slate-900 text-slate-800 antialiased selection:bg-tealBrand-500 selection:text-white transition-colors duration-700">
+<!-- CM005 - Top Emergency Bar -->
+<div class="bg-tealBrand-900/95 border-b border-tealBrand-800/60 text-white text-xs py-2 px-4 sticky top-0 z-50 backdrop-blur-md">
+<div class="w-full max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 px-2 sm:px-6">
+<div class="flex items-center gap-3 flex-wrap justify-center md:justify-start">
+<span class="inline-flex items-center gap-1.5 bg-red-600 text-white font-extrabold px-3 py-1 rounded-full text-[11px] uppercase tracking-wider animate-pulse shadow-md"><i class="fa-solid fa-truck-medical"></i> 24/7 Emergency</span>
+<a href="tel:9908899131" class="hover:text-tealBrand-100 transition-colors font-bold text-xs flex items-center gap-1.5 bg-white/10 px-3 py-0.5 rounded-full border border-white/10"><i class="fa-solid fa-phone-volume text-tealBrand-400"></i> Hotline: <span class="tracking-wide text-white">+91 9908899131</span></a>
+<span class="hidden xl:inline-block text-slate-500">|</span>
+<span class="hidden xl:inline-flex items-center gap-1 text-slate-200 font-semibold text-xs"><i class="fa-solid fa-hospital-user text-tealBrand-400"></i> Level-2 NICU &amp; Emergency Trauma Ready</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-slate-300 font-medium text-[11px] hidden sm:inline">Connect With Us:</span>
+<div class="flex items-center gap-1.5">
+<a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-tealBrand-500 text-white flex items-center justify-center transition-all hover:scale-110"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+<a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-tealBrand-500 text-white flex items-center justify-center transition-all hover:scale-110"><i class="fa-brands fa-instagram text-xs"></i></a>
+<a href="https://wa.me/919908899131" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-green-500 text-white flex items-center justify-center transition-all hover:scale-110"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+<a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-red-600 text-white flex items-center justify-center transition-all hover:scale-110"><i class="fa-brands fa-youtube text-xs"></i></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CM006 - Main Header -->
+<header class="bg-white border-b border-slate-200 shadow-lg sticky top-[37px] z-40">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8 py-3">
+<div class="flex items-center justify-between gap-4 border-b border-slate-100 pb-2.5">
+<a href="#" class="flex items-center gap-3 group whitespace-nowrap overflow-hidden text-ellipsis">
+<div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-tealBrand-900 to-tealBrand-600 flex items-center justify-center text-white shadow-md shadow-tealBrand-600/30 shrink-0 group-hover:scale-105 transition-transform"><i class="fa-solid fa-hospital-user text-lg sm:text-xl"></i></div>
+<h1 class="text-base sm:text-2xl lg:text-3xl font-black text-tealBrand-900 tracking-tight leading-none whitespace-nowrap overflow-hidden text-ellipsis">Krishna Children's <span class="text-tealBrand-500">&amp;</span> Dental Hospital</h1>
+</a>
+<div class="hidden md:flex items-center gap-3 shrink-0">
+<span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-location-dot text-tealBrand-600 mr-1"></i> Opp RTC Depot, Allagadda</span>
+<a href="#opd" class="bg-gradient-to-r from-tealBrand-600 to-tealBrand-800 hover:from-tealBrand-700 hover:to-tealBrand-900 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl shadow-md transition-all hover:scale-105 flex items-center gap-2"><i class="fa-regular fa-calendar-check text-sm"></i> Book OPD Pass</a>
+</div>
+<button id="mobileMenuBtn" class="lg:hidden text-slate-800 hover:text-tealBrand-600 text-2xl p-1 focus:outline-none" aria-label="Toggle Navigation Menu"><i class="fa-solid fa-bars"></i></button>
+</div>
+<div class="hidden lg:flex items-center justify-between pt-2.5">
+<nav class="flex items-center gap-2 sm:gap-3 flex-wrap">
+<a href="#about" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">About</a>
+<a href="#doctors" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">Doctors</a>
+<a href="#specialties" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">Specialties</a>
+<a href="#vaccines" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">Vaccines</a>
+<a href="#opd" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">OPD</a>
+<a href="#videos" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">Videos</a>
+<a href="#timings" class="bg-slate-100 hover:bg-tealBrand-600 hover:text-white text-slate-800 font-extrabold text-xs px-4 py-2 rounded-xl border border-slate-200/80 transition-all uppercase tracking-wider shadow-sm">Timings</a>
+</nav>
+<div class="text-xs font-bold text-tealBrand-800 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span><span>30+ Years Trust in Allagadda</span></div>
+</div>
+</div>
+<div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-2 shadow-2xl text-xs font-extrabold uppercase">
+<div class="grid grid-cols-2 gap-2">
+<a href="#about" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">About</a>
+<a href="#doctors" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">Doctors</a>
+<a href="#specialties" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">Specialties</a>
+<a href="#vaccines" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">Vaccines</a>
+<a href="#opd" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">OPD</a>
+<a href="#videos" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">Videos</a>
+</div>
+<a href="#timings" class="block text-center bg-slate-100 hover:bg-tealBrand-600 hover:text-white py-2.5 rounded-xl border border-slate-200">Timings</a>
+<a href="#opd" class="block text-center bg-gradient-to-r from-tealBrand-600 to-tealBrand-800 text-white font-extrabold py-3 rounded-xl shadow mt-2"><i class="fa-regular fa-calendar-check mr-1.5"></i> Register OPD Ticket</a>
+</div>
+</header>
+
+<!-- CM007 - Realtime Status -->
+<section class="bg-slate-950 text-white py-2.5 px-4 border-b border-slate-800">
+<div class="w-full max-w-[1920px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left px-2 sm:px-6">
+<div class="flex items-center gap-3">
+<div id="statusBadgeContainer" class="flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-full text-xs font-bold tracking-wide"><span id="statusPulseDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span><span id="statusText">Checking Consultation Hours Status...</span></div>
+<div class="hidden lg:block text-xs text-slate-400 font-medium border-l border-slate-800 pl-3">Consultation Hours: Morning (10:00 AM - 2:00 PM) | Evening (5:00 PM - 9:00 PM)</div>
+</div>
+<div id="timeClock" class="text-xs font-bold text-tealBrand-100 flex items-center gap-1.5 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800"><i class="fa-regular fa-clock text-tealBrand-400"></i><span id="liveTimeDisplay">--:--:-- --</span></div>
+</div>
+</section>
+
+<!-- CM008 - Hero Section -->
+<section class="hero-gradient text-white py-12 lg:py-16 px-4 sm:px-8 border-b border-slate-800">
+<div class="w-full max-w-[1920px] mx-auto grid lg:grid-cols-12 gap-8 items-center px-2 sm:px-6">
+<div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 bg-tealBrand-500/20 border border-tealBrand-400/40 backdrop-blur-md px-4 py-1.5 rounded-full text-tealBrand-100 text-xs font-extrabold uppercase tracking-widest shadow-md"><i class="fa-solid fa-award text-amber-400 text-sm"></i> 30+ Years Legacy in Allagadda</div>
+<h2 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">Comprehensive Care for <span class="text-transparent bg-clip-text bg-gradient-to-r from-tealBrand-100 via-tealBrand-400 to-cyan-300">Children &amp; Smiles</span></h2>
+<p class="text-slate-200 text-sm sm:text-base lg:text-lg font-normal leading-relaxed max-w-3xl mx-auto lg:mx-0">Welcome to <strong>Krishna Children's &amp; Dental Hospital</strong> — Allagadda’s premier multi-specialty destination. Blending expert <strong>Pediatric Care</strong> by senior specialists with state-of-the-art <strong>Dental Surgery</strong> in a sterile, patient-centric environment.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+<a href="#opd" class="w-full sm:w-auto text-center bg-gradient-to-r from-tealBrand-500 to-tealBrand-700 hover:from-tealBrand-600 hover:to-tealBrand-800 text-white font-extrabold text-sm px-8 py-3.5 rounded-xl shadow-xl shadow-tealBrand-500/30 transition-all hover:scale-105"><i class="fa-solid fa-user-plus mr-2"></i> Register OPD Ticket</a>
+<a href="#timings" class="w-full sm:w-auto text-center bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm px-8 py-3.5 rounded-xl backdrop-blur-md transition-all hover:scale-105"><i class="fa-solid fa-clock text-tealBrand-400 mr-2"></i> View Doctor Timings</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/10 text-center">
+<div class="bg-white/5 p-3 rounded-2xl border border-white/10 backdrop-blur-sm"><div class="text-2xl sm:text-3xl font-black text-tealBrand-100">30+</div><div class="text-[11px] text-slate-300 font-semibold uppercase tracking-wider">Years Experience</div></div>
+<div class="bg-white/5 p-3 rounded-2xl border border-white/10 backdrop-blur-sm"><div class="text-2xl sm:text-3xl font-black text-tealBrand-100">50,000+</div><div class="text-[11px] text-slate-300 font-semibold uppercase tracking-wider">Patients Served</div></div>
+<div class="bg-white/5 p-3 rounded-2xl border border-white/10 backdrop-blur-sm"><div class="text-2xl sm:text-3xl font-black text-tealBrand-100">30 Bed</div><div class="text-[11px] text-slate-300 font-semibold uppercase tracking-wider">Inpatient Ward</div></div>
+<div class="bg-white/5 p-3 rounded-2xl border border-white/10 backdrop-blur-sm"><div class="text-2xl sm:text-3xl font-black text-tealBrand-100">24/7</div><div class="text-[11px] text-slate-300 font-semibold uppercase tracking-wider">NICU Emergency</div></div>
+</div>
+</div>
+<div id="highlights" class="lg:col-span-5">
+<div class="glass-panel rounded-3xl p-6 text-slate-800 shadow-2xl relative overflow-hidden border border-white">
+<div class="flex items-center gap-3 mb-4 border-b border-slate-200/80 pb-3">
+<div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shadow-md"><i class="fa-solid fa-hospital-user"></i></div>
+<div><h3 class="font-black text-lg text-tealBrand-900">Hospital Highlights</h3><p class="text-xs text-slate-500 font-semibold">Opposite RTC Depot, Kadapa Road, Allagadda</p></div>
+</div>
+<ul class="space-y-3.5 text-xs sm:text-sm font-bold text-slate-700">
+<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-tealBrand-600 text-lg shrink-0"></i><span>Senior Children's Specialist &amp; Pediatric Care</span></li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-tealBrand-600 text-lg shrink-0"></i><span>Modern Painless Dental Surgery Suite</span></li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-tealBrand-600 text-lg shrink-0"></i><span>Complete Child Immunization &amp; WHO Vaccines</span></li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-tealBrand-600 text-lg shrink-0"></i><span>Level-II NICU Care &amp; Phototherapy Warmers</span></li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-tealBrand-600 text-lg shrink-0"></i><span>In-House Diagnostic Lab &amp; 24/7 Pharmacy</span></li>
+</ul>
+<div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600 font-bold">
+<span><i class="fa-solid fa-location-dot text-tealBrand-600 mr-1"></i> Kadapa Road, Allagadda</span><span class="text-emerald-700 font-extrabold bg-emerald-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-square-check"></i> Verified Facility</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM009 - Timings -->
+<section id="timings" class="py-14 bg-gradient-to-r from-slate-900 via-tealBrand-900 to-slate-900 text-white w-full border-b border-slate-800">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-100 font-black text-xs uppercase tracking-widest bg-white/10 border border-white/20 px-4 py-1.5 rounded-full shadow">Doctor Consultation Schedule</span><h2 class="text-3xl sm:text-4xl font-black text-white mt-3">Attentive Consulting Timings</h2><p class="text-slate-300 text-xs sm:text-sm mt-1">Convenient morning and evening consultation slots designed for working parents and family comfort.</p><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+<div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-amber-400/30 hover:border-amber-400 transition-all hover:scale-105 shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center text-2xl shadow-lg"><i class="fa-solid fa-sun"></i></div><span class="bg-amber-400/20 text-amber-300 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider border border-amber-400/30">Morning OPD</span></div>
+<h3 class="text-xl font-extrabold text-white">Morning Consultation</h3><p class="text-slate-300 text-xs mt-1">General pediatric checkups, vaccination, and dental consultations.</p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-slate-300 font-semibold"><i class="fa-regular fa-clock mr-1 text-amber-400"></i> Hours:</span><span class="text-lg font-black text-amber-300 bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-500/30">10:00 AM – 02:00 PM</span></div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-indigo-400/30 hover:border-indigo-400 transition-all hover:scale-105 shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 text-white flex items-center justify-center text-2xl shadow-lg"><i class="fa-solid fa-moon"></i></div><span class="bg-indigo-400/20 text-indigo-300 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider border border-indigo-400/30">Evening OPD</span></div>
+<h3 class="text-xl font-extrabold text-white">Evening Consultation</h3><p class="text-slate-300 text-xs mt-1">Dental surgical procedures, tooth extractions, and child follow-ups.</p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-slate-300 font-semibold"><i class="fa-regular fa-clock mr-1 text-indigo-400"></i> Hours:</span><span class="text-lg font-black text-indigo-300 bg-indigo-950/60 px-3 py-1 rounded-xl border border-indigo-500/30">05:00 PM – 09:00 PM</span></div>
+</div>
+<div class="bg-gradient-to-br from-red-950/80 to-slate-900 backdrop-blur-md rounded-3xl p-6 border border-red-500/50 hover:border-red-400 transition-all hover:scale-105 shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-rose-700 text-white flex items-center justify-center text-2xl shadow-lg animate-pulse"><i class="fa-solid fa-truck-medical"></i></div><span class="bg-red-500/20 text-red-300 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider border border-red-500/30">24/7 Emergency</span></div>
+<h3 class="text-xl font-extrabold text-white">Emergency &amp; Level-2 NICU</h3><p class="text-slate-300 text-xs mt-1">Round-the-clock newborn intensive care and dental trauma emergency.</p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-slate-300 font-semibold"><i class="fa-solid fa-headset mr-1 text-red-400"></i> Status:</span><span class="text-lg font-black text-red-400 bg-red-950/80 px-3 py-1 rounded-xl border border-red-500/40">24 HOURS OPEN</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM010 - OPD Registration Form -->
+<section id="opd" class="py-14 bg-slate-100 w-full border-b border-slate-200">
+<div class="w-full max-w-5xl mx-auto px-4 sm:px-8">
+<div class="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
+<div class="bg-gradient-to-r from-tealBrand-900 via-tealBrand-800 to-tealBrand-900 text-white p-6 sm:p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+<div><span class="inline-block bg-tealBrand-500/30 text-tealBrand-100 text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest mb-1.5 border border-tealBrand-400/30">Instant OPD Booking</span><h3 class="text-2xl sm:text-3xl font-black">Online OPD Ticket Register</h3><p class="text-tealBrand-100 text-xs sm:text-sm mt-1">Fill in the patient details to generate your official OPD consultation ticket pass instantly.</p></div>
+<div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-tealBrand-100 shrink-0 shadow-inner"><i class="fa-solid fa-file-signature"></i></div>
+</div>
+<form id="opdForm" class="p-6 sm:p-10 space-y-5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Patient Full Name <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-user text-xs"></i></span><input type="text" id="patientName" required placeholder="Enter Patient Full Name" class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all"></div></div>
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Select Specialist Doctor <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-user-md text-xs"></i></span><select id="doctorSelect" required class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all appearance-none"><option value="">-- Choose Specialist Doctor --</option><option value="Dr. K. Krishnamohan Reddy (Pediatrician)">Dr. K. Krishnamohan Reddy (M.B.B.S., D.C.H. - Pediatrician)</option><option value="Dr. M. Laxmipriyanka (Dental Surgeon)">Dr. M. Laxmipriyanka (B.D.S. - Dental Surgeon)</option></select><span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400"><i class="fa-solid fa-chevron-down text-xs"></i></span></div></div>
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Patient Age (Years / Months) <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-cake-candles text-xs"></i></span><input type="text" id="patientAge" required placeholder="e.g. 6 Years or 9 Months" class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all"></div></div>
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Patient Gender <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-venus-mars text-xs"></i></span><select id="patientGender" required class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all appearance-none"><option value="">-- Select Gender --</option><option value="Male">Male</option><option value="Female">Female</option><option value="Other">Other</option></select><span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400"><i class="fa-solid fa-chevron-down text-xs"></i></span></div></div>
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Contact Mobile Number <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-phone text-xs"></i></span><input type="tel" id="patientMobile" required pattern="[0-9]{10}" placeholder="10-digit Mobile Number" class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all"></div></div>
+<div class="space-y-1.5"><label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Preferred Visit Date <span class="text-red-500">*</span></label><div class="relative"><span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-regular fa-calendar-days text-xs"></i></span><input type="date" id="visitDate" required class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:bg-white focus:border-tealBrand-500 focus:ring-2 focus:ring-tealBrand-500/20 outline-none transition-all"></div></div>
+</div>
+<button type="submit" id="opdSubmitBtn" class="w-full bg-gradient-to-r from-tealBrand-600 via-tealBrand-700 to-tealBrand-900 hover:from-tealBrand-700 hover:to-tealBrand-950 text-white font-black text-sm py-3.5 rounded-xl shadow-xl shadow-tealBrand-600/30 transition-all hover:scale-[1.008] flex items-center justify-center gap-2"><i class="fa-solid fa-paper-plane text-sm"></i> Generate OPD Pass Ticket</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- CM011 - About -->
+<section id="about" class="py-16 bg-white w-full border-b border-slate-200">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-600 font-black text-xs uppercase tracking-widest bg-tealBrand-50 border border-tealBrand-100 px-4 py-1.5 rounded-full">30 Years of Medical Trust</span><h2 class="text-3xl sm:text-4xl font-black text-tealBrand-900 mt-3">About Krishna Children's &amp; Dental Hospital</h2><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+<div class="space-y-4 text-slate-700 font-medium leading-relaxed text-sm sm:text-base">
+<p class="bg-slate-50 p-4 rounded-2xl border-l-4 border-tealBrand-500 text-slate-800 font-semibold">Conveniently situated right opposite the RTC Bus Depot on Kadapa Road, Allagadda, <strong>Krishna Children's and Dental Hospital</strong> has been serving the regional community with clinical excellence and warmth for over 30 years.</p>
+<p>Our multi-specialty center combines specialized <strong>Pediatric Care</strong> for newborn infants and growing children with an advanced <strong>Dental Surgical Facility</strong>. Equipped with a 30-bed inpatient ward, Level-2 Neonatal Intensive Care Unit (NICU), and in-house diagnostic laboratory, we are dedicated to providing accessible, top-tier healthcare.</p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-4 bg-tealBrand-50/60 rounded-2xl border border-tealBrand-100 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-bed-pulse"></i></div><div><h4 class="font-extrabold text-slate-900 text-xs sm:text-sm">30 Bed Wards</h4><p class="text-[11px] text-slate-500 font-semibold">Inpatient Facilities</p></div></div>
+<div class="p-4 bg-tealBrand-50/60 rounded-2xl border border-tealBrand-100 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-pills"></i></div><div><h4 class="font-extrabold text-slate-900 text-xs sm:text-sm">24/7 Pharmacy</h4><p class="text-[11px] text-slate-500 font-semibold">In-House Store</p></div></div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-5 bg-gradient-to-br from-slate-50 to-tealBrand-50/30 rounded-2xl border border-slate-200 hover:border-tealBrand-400 transition-all shadow-sm"><div class="w-10 h-10 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl mb-3 shadow"><i class="fa-solid fa-baby"></i></div><h4 class="font-extrabold text-slate-900 text-sm mb-1">Level-2 NICU Unit</h4><p class="text-slate-600 text-xs">Newborn phototherapy units, infant incubators, and specialized neonatal care.</p></div>
+<div class="p-5 bg-gradient-to-br from-slate-50 to-tealBrand-50/30 rounded-2xl border border-slate-200 hover:border-tealBrand-400 transition-all shadow-sm"><div class="w-10 h-10 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl mb-3 shadow"><i class="fa-solid fa-tooth"></i></div><h4 class="font-extrabold text-slate-900 text-sm mb-1">Advanced Dental OT</h4><p class="text-slate-600 text-xs">Painless root canal therapy, braces, teeth whitening, and oral surgeries.</p></div>
+<div class="p-5 bg-gradient-to-br from-slate-50 to-tealBrand-50/30 rounded-2xl border border-slate-200 hover:border-tealBrand-400 transition-all shadow-sm"><div class="w-10 h-10 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl mb-3 shadow"><i class="fa-solid fa-syringe"></i></div><h4 class="font-extrabold text-slate-900 text-sm mb-1">WHO Vaccines</h4><p class="text-slate-600 text-xs">Complete pediatric vaccination schedule for infants and children.</p></div>
+<div class="p-5 bg-gradient-to-br from-slate-50 to-tealBrand-50/30 rounded-2xl border border-slate-200 hover:border-tealBrand-400 transition-all shadow-sm"><div class="w-10 h-10 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl mb-3 shadow"><i class="fa-solid fa-user-nurse"></i></div><h4 class="font-extrabold text-slate-900 text-sm mb-1">Attentive Nursing Staff</h4><p class="text-slate-600 text-xs">24/7 dedicated nursing staff providing warm and gentle patient care.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM012 - Doctors -->
+<section id="doctors" class="py-16 bg-slate-100 w-full border-b border-slate-200">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-600 font-black text-xs uppercase tracking-widest bg-tealBrand-50 border border-tealBrand-100 px-4 py-1.5 rounded-full">Expert Medical Consultants</span><h2 class="text-3xl sm:text-4xl font-black text-tealBrand-900 mt-3">Meet Our Specialists</h2><p class="text-slate-600 text-xs sm:text-sm mt-1">Leading pediatric and dental specialists dedicated to compassionate patient care.</p><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 hover:border-tealBrand-400 transition-all group flex flex-col justify-between">
+<div class="p-8 bg-gradient-to-b from-tealBrand-50 to-white text-center border-b border-slate-100">
+<div class="relative w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-tr from-tealBrand-900 via-tealBrand-700 to-tealBrand-500 flex items-center justify-center text-white shadow-xl group-hover:scale-105 transition-transform border-4 border-white"><span class="text-3xl font-black">DR. K</span><span class="absolute bottom-0 right-0 bg-tealBrand-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm shadow border-2 border-white"><i class="fa-solid fa-stethoscope"></i></span></div>
+<h3 class="text-2xl font-black text-tealBrand-900">Dr. K. Krishnamohan Reddy</h3><div class="text-tealBrand-600 font-extrabold text-sm mt-1">M.B.B.S., D.C.H.</div><div class="inline-block bg-tealBrand-100 text-tealBrand-800 text-xs font-black px-4 py-1 rounded-full mt-2.5">Senior Children's Specialist &amp; Pediatrician</div>
+</div>
+<div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+<p class="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed text-center">Over 30 years of clinical experience in child health, neonatal emergency care, pediatric disease management, growth monitoring, and immunization.</p>
+<div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-bold text-slate-700">
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> Specialization: Neonates &amp; General Pediatrics</div>
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-clock text-tealBrand-600 text-sm"></i> Timings: 10:00 AM - 2:00 PM &amp; 5:00 PM - 9:00 PM</div>
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-language text-tealBrand-600 text-sm"></i> Languages: English, Telugu, Hindi</div>
+</div>
+<a href="#opd" class="block text-center bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-3 rounded-xl transition-all shadow-sm">Book Appointment with Dr. Reddy</a>
+</div>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 hover:border-tealBrand-400 transition-all group flex flex-col justify-between">
+<div class="p-8 bg-gradient-to-b from-tealBrand-50 to-white text-center border-b border-slate-100">
+<div class="relative w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-tr from-cyan-700 via-tealBrand-600 to-tealBrand-400 flex items-center justify-center text-white shadow-xl group-hover:scale-105 transition-transform border-4 border-white"><span class="text-3xl font-black">DR. M</span><span class="absolute bottom-0 right-0 bg-tealBrand-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm shadow border-2 border-white"><i class="fa-solid fa-tooth"></i></span></div>
+<h3 class="text-2xl font-black text-tealBrand-900">Dr. M. Laxmipriyanka</h3><div class="text-tealBrand-600 font-extrabold text-sm mt-1">B.D.S.</div><div class="inline-block bg-tealBrand-100 text-tealBrand-800 text-xs font-black px-4 py-1 rounded-full mt-2.5">Dental Surgeon &amp; Oral Health Specialist</div>
+</div>
+<div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+<p class="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed text-center">Expert in modern painless dental procedures, root canals, ceramic crown alignment, tooth scaling, cosmetic dental design, and pediatric tooth care.</p>
+<div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-bold text-slate-700">
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i> Specialization: Root Canals &amp; Oral Surgery</div>
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-clock text-tealBrand-600 text-sm"></i> Timings: 10:00 AM - 2:00 PM &amp; 5:00 PM - 9:00 PM</div>
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-language text-tealBrand-600 text-sm"></i> Languages: English, Telugu</div>
+</div>
+<a href="#opd" class="block text-center bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-3 rounded-xl transition-all shadow-sm">Book Appointment with Dr. Laxmipriyanka</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM013 - Specialties -->
+<section id="specialties" class="py-16 bg-tealBrand-900 text-white w-full border-b border-slate-800">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-100 font-black text-xs uppercase tracking-widest bg-white/10 px-4 py-1.5 rounded-full border border-white/10">Clinical Departments</span><h2 class="text-3xl sm:text-4xl font-black text-white mt-3">Comprehensive Hospital Specialties</h2><p class="text-slate-300 text-xs sm:text-sm mt-1">Full spectrum medical services for children and complete dental treatments.</p><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-syringe"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">WHO Immunization Vaccines</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Full vaccination schedules for infants, children, and teens using certified vaccines.</p></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-truck-medical"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">24/7 Emergency Care</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Round-the-clock emergency medical response for high fever, acute child illness, and dental trauma.</p></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-baby-carriage"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">Level II NICU Facility</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Advanced phototherapy units and radiant warmers for premature and sick newborn care.</p></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-tooth"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">Advanced Dental Surgery</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Painless root canal treatment, ceramic crowns, tooth extractions, and smile design.</p></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-child"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">Child Growth &amp; Nutrition</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Milestone assessments, height/weight tracking, and nutrition guidance for growing kids.</p></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:scale-105"><div class="w-12 h-12 rounded-2xl bg-tealBrand-500/30 text-tealBrand-100 flex items-center justify-center text-2xl mb-4 border border-tealBrand-400/30"><i class="fa-solid fa-vials"></i></div><h3 class="font-extrabold text-lg text-tealBrand-100 mb-1">Lab Diagnostics &amp; Pharmacy</h3><p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Fully equipped blood diagnostic lab and 24/7 stocked pharmacy within hospital premises.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CM014 - Vaccines -->
+<section id="vaccines" class="py-16 bg-slate-50 w-full border-b border-slate-200">
+<div class="w-full max-w-4xl mx-auto px-4 sm:px-8">
+<div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 text-center">
+<span class="inline-block bg-tealBrand-100 text-tealBrand-800 text-[11px] font-black px-3.5 py-1 rounded-full uppercase tracking-widest mb-2">Parent Utility Tool</span>
+<h3 class="text-2xl sm:text-3xl font-black text-tealBrand-900">Child Immunization Schedule Calculator</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-xl mx-auto">Select your child's date of birth to calculate the WHO pediatric immunization schedule timeline.</p>
+<div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
+<input type="date" id="dobInput" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-tealBrand-500">
+<button onclick="calculateVaccines()" class="w-full sm:w-auto bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-extrabold text-xs px-6 py-3.5 rounded-xl transition-all shrink-0 shadow-md">Calculate Schedule</button>
+</div>
+<div id="vaccineResults" class="hidden mt-8 text-left space-y-3 border-t border-slate-100 pt-6">
+<h4 class="font-extrabold text-slate-800 text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-calendar-check text-tealBrand-600 text-base"></i> Recommended Immunization Dates:</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="vaccineListContainer"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM015 - Infrastructure -->
+<section class="py-16 bg-white w-full border-b border-slate-200">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-600 font-black text-xs uppercase tracking-widest bg-tealBrand-50 border border-tealBrand-100 px-4 py-1.5 rounded-full">World-Class Infrastructure</span><h2 class="text-3xl sm:text-4xl font-black text-tealBrand-900 mt-3">Hospital Facilities &amp; Technology</h2><p class="text-slate-600 text-xs sm:text-sm mt-1">Designed for hygienic comfort, patient safety, and immediate emergency care.</p><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+<div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition-all group">
+<div class="h-44 bg-slate-900 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Inpatient Ward" class="w-full h-full object-cover group-hover:scale-110 transition-transform opacity-90"><span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">30 Beds Capacity</span></div>
+<div class="p-5"><h4 class="font-extrabold text-slate-900 text-base">Inpatient Care Wards</h4><p class="text-slate-600 text-xs mt-1 leading-relaxed">Spacious private and general rooms with continuous nursing care for child recovery.</p></div>
+</div>
+<div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition-all group">
+<div class="h-44 bg-slate-900 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="NICU Ward" class="w-full h-full object-cover group-hover:scale-110 transition-transform opacity-90"><span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">Level-2 NICU</span></div>
+<div class="p-5"><h4 class="font-extrabold text-slate-900 text-base">Neonatal Intensive Unit</h4><p class="text-slate-600 text-xs mt-1 leading-relaxed">Equipped with newborn phototherapy lamps, warmers, and continuous vital monitors.</p></div>
+</div>
+<div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition-all group">
+<div class="h-44 bg-slate-900 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Dental Clinic" class="w-full h-full object-cover group-hover:scale-110 transition-transform opacity-90"><span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">Modern Dental Suite</span></div>
+<div class="p-5"><h4 class="font-extrabold text-slate-900 text-base">Dental Surgical Suite</h4><p class="text-slate-600 text-xs mt-1 leading-relaxed">Sterile ergonomic dental chairs, digital dental X-ray, and intraoral scanner tools.</p></div>
+</div>
+<div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition-all group">
+<div class="h-44 bg-slate-900 overflow-hidden relative"><img src="https://images.unsplash.com/photo-1583912267670-657592e914a6?auto=format&fit=crop&w=600&q=80" alt="Pharmacy & Lab" class="w-full h-full object-cover group-hover:scale-110 transition-transform opacity-90"><span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">24/7 Diagnostics</span></div>
+<div class="p-5"><h4 class="font-extrabold text-slate-900 text-base">In-House Pharmacy &amp; Lab</h4><p class="text-slate-600 text-xs mt-1 leading-relaxed">Instant diagnostic blood reports and round-the-clock availability of critical pediatric medicines.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM016 - Videos -->
+<section id="videos" class="py-16 bg-slate-100 w-full border-b border-slate-200">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10"><span class="text-tealBrand-600 font-black text-xs uppercase tracking-widest bg-tealBrand-50 border border-tealBrand-100 px-4 py-1.5 rounded-full">Educational Media</span><h2 class="text-3xl sm:text-4xl font-black text-tealBrand-900 mt-3">Healthcare Awareness Video Center</h2><p class="text-slate-600 text-xs sm:text-sm mt-1">Watch medical advice and healthcare tips curated by our doctors.</p><div class="w-16 h-1 bg-tealBrand-500 mx-auto mt-3 rounded-full"></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-44 bg-slate-900 group cursor-pointer overflow-hidden" onclick="playVideoModal('Pediatric Health & Growth Benefits', 'https://www.youtube.com/embed/dQw4w9WgXcQ')"><img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=500&q=80" alt="Pediatric Health Benefits" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform"><div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></span></div></div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+<div><span class="text-[10px] font-black text-tealBrand-600 uppercase tracking-widest">Pediatric Care</span><h4 class="font-extrabold text-slate-900 text-sm mt-0.5">Pediatric Health Benefits</h4><p class="text-slate-500 text-xs mt-1">Guidance on child growth milestones, balanced nutrition, and immunity.</p></div>
+<a href="https://youtube.com" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 w-full bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-2.5 rounded-xl transition-colors"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Open Video Link</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-44 bg-slate-900 group cursor-pointer overflow-hidden" onclick="playVideoModal('General Healthcare & Wellness Tips', 'https://www.youtube.com/embed/dQw4w9WgXcQ')"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=500&q=80" alt="General Healthcare Tips" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform"><div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></span></div></div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+<div><span class="text-[10px] font-black text-tealBrand-600 uppercase tracking-widest">General Health</span><h4 class="font-extrabold text-slate-900 text-sm mt-0.5">General Healthcare Tips</h4><p class="text-slate-500 text-xs mt-1">Preventive health guidelines for parents and daily healthy habits.</p></div>
+<a href="https://youtube.com" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 w-full bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-2.5 rounded-xl transition-colors"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Open Video Link</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-44 bg-slate-900 group cursor-pointer overflow-hidden" onclick="playVideoModal('Daily Dental Care Routine', 'https://www.youtube.com/embed/dQw4w9WgXcQ')"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=500&q=80" alt="Daily Dental Care Routine" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform"><div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></span></div></div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+<div><span class="text-[10px] font-black text-tealBrand-600 uppercase tracking-widest">Dental Health</span><h4 class="font-extrabold text-slate-900 text-sm mt-0.5">Daily Dental Routine</h4><p class="text-slate-500 text-xs mt-1">Brossing techniques, cavity prevention, and maintaining white teeth.</p></div>
+<a href="https://youtube.com" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 w-full bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-2.5 rounded-xl transition-colors"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Open Video Link</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-44 bg-slate-900 group cursor-pointer overflow-hidden" onclick="playVideoModal('Current Weather Care & Seasonal Health', 'https://www.youtube.com/embed/dQw4w9WgXcQ')"><img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=500&q=80" alt="Current Weather Care" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform"><div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-tealBrand-500 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></span></div></div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+<div><span class="text-[10px] font-black text-tealBrand-600 uppercase tracking-widest">Seasonal Health</span><h4 class="font-extrabold text-slate-900 text-sm mt-0.5">Current Weather Care</h4><p class="text-slate-500 text-xs mt-1">Viral fever protection, monsoon health, and flu prevention tips.</p></div>
+<a href="https://youtube.com" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 w-full bg-tealBrand-50 hover:bg-tealBrand-600 hover:text-white text-tealBrand-900 font-extrabold text-xs py-2.5 rounded-xl transition-colors"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Open Video Link</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM017 - Reviews & FAQs -->
+<section class="py-16 bg-white w-full border-b border-slate-200">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8">
+<div class="grid lg:grid-cols-12 gap-10 max-w-7xl mx-auto">
+<div class="lg:col-span-7 space-y-4">
+<span class="text-tealBrand-600 font-black text-xs uppercase tracking-widest bg-tealBrand-50 px-3 py-1 rounded-full border border-tealBrand-100">Help &amp; FAQs</span>
+<h3 class="text-2xl sm:text-3xl font-black text-tealBrand-900">Frequently Asked Questions</h3>
+<div class="space-y-3 pt-2">
+<div class="border border-slate-200 rounded-2xl p-4 bg-slate-50 cursor-pointer" onclick="toggleFaq('faq1')">
+<div class="flex items-center justify-between font-extrabold text-slate-800 text-xs sm:text-sm"><span>What are the consultation hours for Dr. Krishnamohan Reddy?</span><i class="fa-solid fa-chevron-down text-xs text-tealBrand-600"></i></div>
+<p id="faq1" class="text-slate-600 text-xs mt-2 leading-relaxed hidden">Dr. K. Krishnamohan Reddy is available during the Morning session (10:00 AM to 2:00 PM) and Evening session (5:00 PM to 9:00 PM). Emergency NICU services are available 24/7.</p>
+</div>
+<div class="border border-slate-200 rounded-2xl p-4 bg-slate-50 cursor-pointer" onclick="toggleFaq('faq2')">
+<div class="flex items-center justify-between font-extrabold text-slate-800 text-xs sm:text-sm"><span>Are root canal treatments painful?</span><i class="fa-solid fa-chevron-down text-xs text-tealBrand-600"></i></div>
+<p id="faq2" class="text-slate-600 text-xs mt-2 leading-relaxed hidden">Not at all! Dr. M. Laxmipriyanka utilizes modern local anesthesia techniques and digital instruments to make root canal treatments virtually pain-free.</p>
+</div>
+<div class="border border-slate-200 rounded-2xl p-4 bg-slate-50 cursor-pointer" onclick="toggleFaq('faq3')">
+<div class="flex items-center justify-between font-extrabold text-slate-800 text-xs sm:text-sm"><span>Do I need prior appointment for OPD ticket?</span><i class="fa-solid fa-chevron-down text-xs text-tealBrand-600"></i></div>
+<p id="faq3" class="text-slate-600 text-xs mt-2 leading-relaxed hidden">You can generate an instant OPD Pass online on this page or walk in directly at our reception opposite RTC Depot, Allagadda.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-gradient-to-br from-tealBrand-900 to-slate-900 text-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-xl">
+<div class="space-y-4">
+<div class="flex items-center gap-1 text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="text-white text-xs font-black ml-2">4.9 / 5 Rating</span></div>
+<h4 class="text-xl font-extrabold">Trusted by 50,000+ Local Families</h4>
+<p class="text-slate-300 text-xs leading-relaxed italic">"Dr. Krishnamohan Reddy garu has been our family pediatrician for 15 years. Extremely accurate treatment and gentle care. Dr. Laxmipriyanka performed a smooth root canal for my mother with zero pain. Very hygienic hospital!"</p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+<div><div class="font-extrabold text-white">Ramesh Babu &amp; Family</div><div class="text-tealBrand-300 text-[11px]">Allagadda Resident</div></div>
+<span class="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30 font-bold">Verified Review</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CM018 - Footer -->
+<footer class="bg-slate-950 text-white pt-12 pb-8 border-t border-slate-800 w-full">
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-slate-800">
+<div class="lg:col-span-5 space-y-4">
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tealBrand-500 flex items-center justify-center text-white text-xl font-bold shadow-md"><i class="fa-solid fa-hospital-user"></i></div><h3 class="text-lg font-extrabold text-white">Krishna Children's &amp; Dental Hospital</h3></div>
+<p class="text-slate-400 text-xs leading-relaxed">Pioneering healthcare in Allagadda for over 30 years. Combining pediatric medical expertise with advanced dental surgical care opposite the RTC Depot.</p>
+<div class="space-y-2 text-xs text-slate-300 font-semibold">
+<div class="flex items-start gap-2.5"><i class="fa-solid fa-location-dot text-tealBrand-400 mt-0.5 text-sm"></i><span>Opposite RTC Bus Depot, Kadapa Road, Allagadda, Nandyala District, Andhra Pradesh - 518543</span></div>
+<div class="flex items-center gap-2.5"><i class="fa-solid fa-phone text-tealBrand-400 text-sm"></i><span>Emergency Helpline: <strong class="text-white">+91 9908899131</strong></span></div>
+</div>
+</div>
+<div class="lg:col-span-3 space-y-3">
+<h4 class="text-xs font-black text-tealBrand-300 uppercase tracking-widest">Quick Links</h4>
+<ul class="space-y-2 text-xs text-slate-400 font-extrabold uppercase">
+<li><a href="#about" class="hover:text-tealBrand-400 transition-colors">About Us</a></li>
+<li><a href="#doctors" class="hover:text-tealBrand-400 transition-colors">Our Doctors</a></li>
+<li><a href="#specialties" class="hover:text-tealBrand-400 transition-colors">Specialties</a></li>
+<li><a href="#vaccines" class="hover:text-tealBrand-400 transition-colors">Vaccination Schedule</a></li>
+<li><a href="#opd" class="hover:text-tealBrand-400 transition-colors">Online OPD Ticket</a></li>
+<li><a href="#timings" class="hover:text-tealBrand-400 transition-colors">Doctor Timings</a></li>
+</ul>
+</div>
+<div class="lg:col-span-4 space-y-3">
+<h4 class="text-xs font-black text-tealBrand-300 uppercase tracking-widest">Location Directions Map</h4>
+<div onclick="openMapModal()" class="relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 h-40 cursor-pointer group flex items-center justify-center text-center p-4 shadow-md">
+<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=500&q=80" alt="Map Location" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform">
+<div class="relative z-10 space-y-2">
+<div class="w-10 h-10 rounded-full bg-tealBrand-500 text-white flex items-center justify-center mx-auto text-lg shadow-md group-hover:scale-110 transition-transform"><i class="fa-solid fa-map-location-dot"></i></div>
+<div class="text-xs font-black text-white uppercase tracking-wider">Opposite RTC Depot, Allagadda</div>
+<span class="inline-block bg-white/20 hover:bg-white/30 text-white text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-md">Click for Map Directions</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-[1920px] mx-auto px-4 sm:px-8 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-semibold gap-2">
+<div>&copy; 2026 Krishna Children's and Dental Hospital. All Rights Reserved.</div>
+<div class="flex items-center gap-3"><span>Clinical Care Standard</span><span>•</span><a href="tel:9908899131" class="text-tealBrand-400 hover:underline">Hospital Phone: 9908899131</a></div>
+</div>
+</footer>
+
+<!-- CM019 - Modals -->
+<div id="opdTicketModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+<div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border border-slate-200">
+<div class="bg-gradient-to-r from-tealBrand-900 to-tealBrand-700 text-white p-6 text-center relative"><button onclick="closeOpdModal()" class="absolute top-4 right-4 text-white/80 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button><div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl text-tealBrand-100"><i class="fa-solid fa-circle-check"></i></div><h3 class="text-xl font-black">OPD Registration Successful!</h3><p class="text-tealBrand-100 text-xs mt-0.5">Please show this pass at the hospital counter.</p></div>
+<div class="p-6 space-y-4">
+<div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5">
+<div class="flex justify-between border-b border-slate-200 pb-2"><span class="text-slate-500 font-semibold">Token Number:</span><span id="ticketToken" class="font-black text-tealBrand-900 text-base">#KCH-102</span></div>
+<div class="flex justify-between"><span class="text-slate-500 font-semibold">Patient Name:</span><span id="ticketName" class="font-bold text-slate-800">--</span></div>
+<div class="flex justify-between"><span class="text-slate-500 font-semibold">Specialist Doctor:</span><span id="ticketDoctor" class="font-bold text-slate-800">--</span></div>
+<div class="flex justify-between"><span class="text-slate-500 font-semibold">Age &amp; Gender:</span><span id="ticketAgeGender" class="font-bold text-slate-800">--</span></div>
+<div class="flex justify-between"><span class="text-slate-500 font-semibold">Contact Mobile:</span><span id="ticketMobile" class="font-bold text-slate-800">--</span></div>
+<div class="flex justify-between"><span class="text-slate-500 font-semibold">Visit Date:</span><span id="ticketDate" class="font-bold text-slate-800">--</span></div>
+</div>
+<div class="text-center bg-tealBrand-50 p-3 rounded-xl text-tealBrand-900 text-xs font-semibold border border-tealBrand-100"><i class="fa-solid fa-location-dot mr-1 text-tealBrand-600"></i> Opp. RTC Depot, Kadapa Road, Allagadda.</div>
+<div class="flex gap-3">
+<button onclick="window.print()" class="flex-1 bg-slate-900 hover:bg-black text-white font-bold py-3 rounded-xl text-xs transition-colors flex items-center justify-center gap-2"><i class="fa-solid fa-print"></i> Print Pass</button>
+<button onclick="closeOpdModal()" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3 rounded-xl text-xs transition-colors">Done</button>
+</div>
+</div>
+</div>
+</div>
+<div id="videoModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+<div class="bg-black rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative">
+<div class="p-4 bg-slate-900 text-white flex justify-between items-center border-b border-slate-800"><h4 id="videoModalTitle" class="font-bold text-sm">Healthcare Awareness Video</h4><button onclick="closeVideoModal()" class="text-slate-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="aspect-video bg-black flex items-center justify-center text-white text-center p-6">
+<div class="space-y-4">
+<i class="fa-brands fa-youtube text-6xl text-red-600"></i><h3 class="text-xl font-black">Educational Guidance Preview</h3><p class="text-slate-400 text-xs max-w-sm mx-auto">Click below to open the complete video tutorial on YouTube.</p><a id="videoExternalBtn" href="https://youtube.com" target="_blank" rel="noopener" class="inline-block bg-tealBrand-500 hover:bg-tealBrand-600 text-white font-extrabold px-6 py-3 rounded-xl text-xs shadow-lg">Watch Full Video on YouTube</a>
+</div>
+</div>
+</div>
+</div>
+<div id="mapModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+<div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl">
+<div class="bg-tealBrand-900 text-white p-4 flex justify-between items-center"><h4 class="font-bold text-sm"><i class="fa-solid fa-map-pin text-tealBrand-400 mr-2"></i> Hospital Location Directions</h4><button onclick="closeMapModal()" class="text-white/80 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="p-6 space-y-4 text-center">
+<div class="w-14 h-14 bg-tealBrand-100 rounded-full flex items-center justify-center text-tealBrand-800 text-2xl mx-auto"><i class="fa-solid fa-hospital"></i></div>
+<h3 class="font-black text-lg text-slate-800">Krishna Children's &amp; Dental Hospital</h3>
+<p class="text-slate-600 text-xs font-semibold">Opposite RTC Bus Depot, Kadapa Road, Allagadda, Nandyala District, AP - 518543.</p>
+<div class="pt-2 flex flex-col sm:flex-row gap-2">
+<a href="https://maps.google.com/?q=Krishna+Childrens+Hospital+Allagadda" target="_blank" rel="noopener" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2"><i class="fa-solid fa-location-arrow"></i> Google Maps</a>
+<a href="tel:9908899131" class="flex-1 bg-slate-900 hover:bg-black text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2"><i class="fa-solid fa-phone"></i> Call 9908899131</a>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+/* CM020 - Core Functions */
+function updateHospitalStatus(){const now=new Date();const hours=now.getHours();const minutes=now.getMinutes();const currentTimeVal=hours+(minutes/60);const container=document.getElementById('statusBadgeContainer');const dot=document.getElementById('statusPulseDot');const statusText=document.getElementById('statusText');const liveTime=document.getElementById('liveTimeDisplay');let h=hours%12||12;let ampm=hours>=12?'PM':'AM';let m=minutes<10?'0'+minutes:minutes;let s=now.getSeconds()<10?'0'+now.getSeconds():now.getSeconds();liveTime.innerText=`${h}:${m}:${s} ${ampm}`;const isOpen=(currentTimeVal>=10&&currentTimeVal<14)||(currentTimeVal>=17&&currentTimeVal<21);if(isOpen){container.className="flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-full text-xs font-bold tracking-wide";dot.className="w-2 h-2 rounded-full bg-emerald-400 animate-ping";statusText.innerHTML="<i class=\"fa-solid fa-door-open text-emerald-400 mr-1\"></i> Hospital Consultation Status: <span class=\"text-emerald-300 font-black\">OPEN NOW</span>";}else{container.className="flex items-center gap-2 bg-rose-500/20 text-rose-300 border border-rose-500/40 px-3 py-1 rounded-full text-xs font-bold tracking-wide";dot.className="w-2 h-2 rounded-full bg-rose-500";statusText.innerHTML="<i class=\"fa-solid fa-door-closed text-rose-400 mr-1\"></i> Consultation Closed (24/7 NICU Emergency Open)";}}
+document.getElementById('opdForm').addEventListener('submit',function(e){e.preventDefault();const name=document.getElementById('patientName').value;const doctor=document.getElementById('doctorSelect').value;const age=document.getElementById('patientAge').value;const gender=document.getElementById('patientGender').value;const mobile=document.getElementById('patientMobile').value;const date=document.getElementById('visitDate').value;const tokenNum="#KCH-"+Math.floor(100+Math.random()*900);document.getElementById('ticketToken').innerText=tokenNum;document.getElementById('ticketName').innerText=name;document.getElementById('ticketDoctor').innerText=doctor;document.getElementById('ticketAgeGender').innerText=`${age} (${gender})`;document.getElementById('ticketMobile').innerText=mobile;document.getElementById('ticketDate').innerText=date;document.getElementById('opdTicketModal').classList.remove('hidden');});
+function closeOpdModal(){document.getElementById('opdTicketModal').classList.add('hidden');document.getElementById('opdForm').reset();}
+function playVideoModal(title,url){document.getElementById('videoModalTitle').innerText=title;document.getElementById('videoExternalBtn').href="https://youtube.com";document.getElementById('videoModal').classList.remove('hidden');}
+function closeVideoModal(){document.getElementById('videoModal').classList.add('hidden');}
+function openMapModal(){document.getElementById('mapModal').classList.remove('hidden');}
+function closeMapModal(){document.getElementById('mapModal').classList.add('hidden');}
+function calculateVaccines(){const dob=document.getElementById('dobInput').value;if(!dob){const results=document.getElementById('vaccineResults');results.classList.remove('hidden');results.innerHTML=`<div class="p-4 bg-red-50 text-red-700 rounded-2xl text-xs font-extrabold text-center border border-red-200">Please select your child's birth date first!</div>`;return;}const birthDate=new Date(dob);const container=document.getElementById('vaccineListContainer');container.innerHTML='';const vaccineSchedule=[{name:'At Birth: BCG, OPV-0, Hep B-1',offsetDays:0},{name:'6 Weeks: DPT-1, IPV-1, Rotavirus-1',offsetDays:42},{name:'10 Weeks: DPT-2, IPV-2, Rotavirus-2',offsetDays:70},{name:'14 Weeks: DPT-3, IPV-3, Rotavirus-3',offsetDays:98},{name:'9 Months: MMR-1, Typhoid Vaccine',offsetDays:270},{name:'15-18 Months: DPT Booster-1, MMR-2',offsetDays:450}];vaccineSchedule.forEach(v=>{const dueDate=new Date(birthDate);dueDate.setDate(dueDate.getDate()+v.offsetDays);const formattedDate=dueDate.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});const card=document.createElement('div');card.className="p-3 bg-slate-50 rounded-2xl border border-slate-200 text-xs font-bold flex justify-between items-center";card.innerHTML=`<span class="text-slate-800">${v.name}</span><span class="text-tealBrand-800 bg-tealBrand-100 px-2.5 py-1 rounded-lg font-black">${formattedDate}</span>`;container.appendChild(card);});document.getElementById('vaccineResults').classList.remove('hidden');}
+function toggleFaq(faqId){const el=document.getElementById(faqId);if(el.classList.contains('hidden')){el.classList.remove('hidden');}else{el.classList.add('hidden');}}
+
+/* CM021 - Event Listeners */
+window.addEventListener('scroll',function(){const scrollPos=window.scrollY;const body=document.getElementById('pageBody');if(scrollPos>1200){body.style.backgroundColor='#0b1329';}else{body.style.backgroundColor='#0f172a';}});
+document.getElementById('mobileMenuBtn').addEventListener('click',function(){const menu=document.getElementById('mobileMenu');menu.classList.toggle('hidden');});
+window.onload=function(){updateHospitalStatus();setInterval(updateHospitalStatus,1000);const today=new Date().toISOString().split('T')[0];document.getElementById('visitDate').value=today;};
+</script>
+</body>
+</html>
