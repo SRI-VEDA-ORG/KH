@@ -1,891 +1,732 @@
+<!-- CM001 - HTML Start -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Children's and Dental Hospital | Allagadda</title>
-    <meta name="description" content="A trusted, caring place for children's healthcare and dental care in Allagadda.">
-    
-    <!-- Favicon & PWA App Install Tags -->
-    <link rel="icon" href="https://sri-veda-org.github.io/KH/KH-LOGO.png" type="image/png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Krishna Hospital">
-    <link rel="apple-touch-icon" href="https://sri-veda-org.github.io/KH/KH-LOGO.png">
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Google Fonts: Inter (English) and Noto Sans Telugu -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        telugu: ['"Noto Sans Telugu"', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0284c7', // Sky Blue 600
-                        primaryLight: '#e0f2fe', // Sky Blue 100
-                        secondary: '#0d9488', // Teal 600
-                        secondaryLight: '#ccfbf1', // Teal 100
-                        softBg: '#f8fafc', // Slate 50
-                        softCream: '#fdfbf7',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom Styles for smoothness and subtle effects */
-        html { scroll-behavior: smooth; }
-        body { -webkit-font-smoothing: antialiased; background-color: #f8fafc; }
-        .glass-header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        /* Decreased section padding for tighter layout */
-        .section-padding { padding-top: 2.5rem; padding-bottom: 2.5rem; } 
-        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
-        
-        /* HD Input Fields */
-        .hd-input {
-            border: 1px solid #e2e8f0;
-            background-color: #f8fafc;
-            transition: all 0.2s ease;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.02);
-        }
-        .hd-input:focus {
-            background-color: #ffffff;
-            border-color: #0284c7;
-            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
-            outline: none;
-        }
+<!-- CM002 - Meta Data -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Children's and Dental Hospital | Allagadda</title>
+<meta name="description" content="A trusted, caring place for children's healthcare and dental care in Allagadda.">
 
-        /* Lightbox Styles */
-        #lightbox { display: none; }
-        #lightbox.active { display: flex; }
-        
-        /* Hide scrollbar for gallery if needed */
-        .hide-scroll::-webkit-scrollbar { display: none; }
-        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
+<!-- CM003 - Favicon and PWA -->
+<link rel="icon" href="https://sri-veda-org.github.io/KH/kh-logo-no-bg.png" type="image/png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Krishna Hospital">
+<link rel="apple-touch-icon" href="https://sri-veda-org.github.io/KH/kh-logo-no-bg.png">
+<link rel="manifest" href="manifest.json">
+
+<!-- CM004 - Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CM005 - Tailwind CSS Config -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], telugu: ['"Noto Sans Telugu"', 'sans-serif'], }, colors: { primary: '#2078b6', primaryLight: '#e0f2fe', secondary: '#2078b6', secondaryLight: '#e0f2fe', softBg: '#f8fafc', softCream: '#fdfbf7', } } } }
+</script>
+
+<!-- CM006 - Custom CSS -->
+<style>
+/* CM007 - General Styles */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; background-color: #f8fafc; }
+.glass-header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.section-padding { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
+
+/* CM008 - Input Styles */
+.hd-input { border: 1px solid #e2e8f0; background-color: #f8fafc; transition: all 0.2s ease; box-shadow: inset 0 1px 2px rgba(0,0,0,0.02); }
+.hd-input:focus { background-color: #ffffff; border-color: #2078b6; box-shadow: 0 0 0 3px rgba(32, 120, 182, 0.15); outline: none; }
+
+/* CM009 - Lightbox Styles */
+#lightbox { display: none; }
+#lightbox.active { display: flex; }
+.hide-scroll::-webkit-scrollbar { display: none; }
+.hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
 </head>
+
+<!-- CM010 - Body Start -->
 <body class="text-gray-800 font-sans antialiased">
 
-    <!-- Header Top Bar (Contact & Socials) -->
-    <div class="bg-primaryLight/70 border-b border-blue-100 text-gray-700 py-1.5 px-4 text-xs font-medium">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-            <div class="flex items-center space-x-4 mb-1 sm:mb-0">
-                <span><i class="fa-solid fa-phone text-primary mr-1"></i> 9908899131</span>
-                <span class="hidden sm:inline"><i class="fa-solid fa-globe text-primary mr-1"></i> www.krishnahospital.com</span>
-            </div>
-            <div class="flex items-center space-x-3 text-sm">
-                <a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors shadow-sm" title="YouTube"><i class="fa-brands fa-youtube text-[10px]"></i></a>
-                <a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors shadow-sm" title="Instagram"><i class="fa-brands fa-instagram text-[10px]"></i></a>
-                <a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors shadow-sm" title="Facebook"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
-                <a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-colors shadow-sm" title="WhatsApp"><i class="fa-brands fa-whatsapp text-[10px]"></i></a>
-            </div>
-        </div>
-    </div>
+<!-- CM011 - Header Top Bar -->
+<div class="bg-primaryLight/70 border-b border-blue-100 text-gray-700 py-1.5 px-4 text-xs font-medium">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+<div class="flex items-center space-x-4 mb-1 sm:mb-0">
+<span><i class="fa-solid fa-phone text-primary mr-1"></i> 9908899131</span>
+<span class="hidden sm:inline"><i class="fa-solid fa-globe text-primary mr-1"></i> www.krishnahospital.com</span>
+</div>
+<div class="flex items-center space-x-3 text-sm">
+<a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors shadow-sm" title="YouTube"><i class="fa-brands fa-youtube text-[10px]"></i></a>
+<a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors shadow-sm" title="Instagram"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+<a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors shadow-sm" title="Facebook"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
+<a href="#" class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-colors shadow-sm" title="WhatsApp"><i class="fa-brands fa-whatsapp text-[10px]"></i></a>
+</div>
+</div>
+</div>
 
-    <!-- Desktop & Mobile Header (New light blue bg) -->
-    <header class="w-full z-50 bg-[#f0f9ff] shadow-sm border-b border-blue-50 transition-all duration-300" id="header">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 md:h-20">
-                
-                <!-- Logo & Name -->
-                <div class="flex items-center space-x-2 sm:space-x-3">
-                    <img src="https://sri-veda-org.github.io/KH/KH-LOGO.png" alt="Krishna Hospital Logo" class="h-10 md:h-12 w-auto object-contain bg-white rounded p-1 shadow-sm">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="text-xs sm:text-sm md:text-lg font-bold text-gray-900 leading-tight">Krishna Children's & Dental Hospital</h1>
-                        <h2 class="font-telugu text-[9px] md:text-sm text-primary font-medium leading-tight mt-0.5">కృష్ణ చిన్న పిల్లల హాస్పిటల్ మరియు దంత వైద్యశాల</h2>
-                    </div>
-                </div>
+<!-- CM012 - Main Header -->
+<header class="w-full z-50 bg-[#f0f9ff] shadow-sm border-b border-blue-50 transition-all duration-300" id="header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16 md:h-20">
+<div class="flex items-center space-x-2 sm:space-x-3">
+<img src="https://sri-veda-org.github.io/KH/KH-LOGO-MAIN.png" alt="Krishna Hospital Logo" class="h-10 md:h-12 w-auto object-contain bg-white rounded p-1 shadow-sm">
+<div class="flex flex-col justify-center">
+<h1 class="text-xs sm:text-sm md:text-lg font-bold text-gray-900 leading-tight">Krishna Children's & Dental Hospital</h1>
+<h2 class="font-telugu text-[9px] md:text-sm text-primary font-medium leading-tight mt-0.5">కృష్ణ చిన్న పిల్లల హాస్పిటల్ మరియు దంత వైద్యశాల</h2>
+</div>
+</div>
+<nav class="hidden lg:flex space-x-6 items-center">
+<a href="#home" class="text-lg text-gray-600 hover:text-primary transition-colors" title="Home"><i class="fa-solid fa-house"></i></a>
+<a href="#doctors" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Doctors</a>
+<a href="#services" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#videos" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Videos</a>
+<a href="#book-op" class="bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-primary transition-colors shadow-sm flex items-center">
+<i class="fa-solid fa-calendar-check mr-2"></i> Book OP
+</a>
+</nav>
+<div class="lg:hidden flex items-center space-x-3">
+<a href="#book-op" class="bg-primary text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-primary transition-colors shadow-sm flex items-center sm:hidden">
+Book OP
+</a>
+<button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full z-50">
+<div class="px-4 pt-2 pb-4 space-y-1">
+<a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md"><i class="fa-solid fa-house mr-2"></i> Home</a>
+<a href="#doctors" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Doctors</a>
+<a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Services</a>
+<a href="#videos" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Videos</a>
+</div>
+</div>
+</header>
 
-                <!-- Desktop Nav (Icon for home, text for others) -->
-                <nav class="hidden lg:flex space-x-6 items-center">
-                    <a href="#home" class="text-lg text-gray-600 hover:text-primary transition-colors" title="Home"><i class="fa-solid fa-house"></i></a>
-                    <a href="#doctors" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Doctors</a>
-                    <a href="#services" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Services</a>
-                    <a href="#videos" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Videos</a>
-                    <a href="#book-op" class="bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-sky-700 transition-colors shadow-sm flex items-center">
-                        <i class="fa-solid fa-calendar-check mr-2"></i> Book OP
-                    </a>
-                </nav>
+<!-- CM013 - Hero Section -->
+<section id="home" class="relative bg-softCream overflow-hidden py-10 lg:py-14">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primaryLight opacity-50 blur-3xl"></div>
+<div class="absolute bottom-0 -left-24 w-72 h-72 rounded-full bg-secondaryLight opacity-50 blur-3xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+<div class="text-center lg:text-left">
+<span class="inline-block py-1 px-3 rounded-full bg-primaryLight text-primary text-[10px] font-semibold uppercase tracking-wider mb-3 border border-blue-100">Trusted Healthcare in Allagadda</span>
+<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4">
+Caring for Little Smiles & <br class="hidden lg:block"/> <span class="text-primary">Healthy Childhoods</span>
+</h2>
+<p class="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0">
+Providing safe, gentle, and expert pediatric and dental care for your family. A caring environment where your child's health comes first.
+</p>
+<div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 justify-center lg:justify-start">
+<a href="#book-op" class="inline-flex justify-center items-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary transition-colors">
+<i class="fa-solid fa-calendar-check mr-2"></i> Book / Contact Hospital
+</a>
+<a href="tel:9908899131" class="inline-flex justify-center items-center px-5 py-2.5 border border-primary text-sm font-medium rounded-md text-primary bg-white hover:bg-primaryLight transition-colors">
+<i class="fa-solid fa-phone mr-2"></i> Call 9908899131
+</a>
+</div>
+<div class="mt-6 flex items-center justify-center lg:justify-start space-x-5 text-xs font-medium text-gray-500">
+<span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> 20+ Beds</span>
+<span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> Children's Care</span>
+<span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> Dental Care</span>
+</div>
+</div>
+<div class="relative mx-auto w-full max-w-md lg:max-w-none">
+<div class="relative bg-white p-2 rounded-2xl shadow-lg border border-gray-50">
+<img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Front View" class="rounded-xl w-full h-auto max-h-[350px] object-cover border border-gray-100">
+<div class="absolute -bottom-5 -left-5 bg-white p-3 rounded-lg shadow-md flex items-center space-x-2 border border-gray-50">
+<div class="bg-secondaryLight p-2 rounded-full text-secondary">
+<i class="fa-solid fa-shield-heart text-lg"></i>
+</div>
+<div>
+<p class="text-[10px] text-gray-500 font-medium uppercase">Family Focused</p>
+<p class="text-xs font-bold text-gray-800">Experienced Doctors</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center space-x-3">
-                    <a href="#book-op" class="bg-primary text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-sky-700 transition-colors shadow-sm flex items-center sm:hidden">
-                        Book OP
-                    </a>
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+<!-- CM014 - Quick Info Bar -->
+<div class="bg-white border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-4">
+<div class="flex items-center space-x-3 justify-center md:justify-start">
+<i class="fa-solid fa-bed-pulse text-xl text-primary opacity-80"></i>
+<div>
+<h3 class="font-bold text-gray-800 text-xs">20+ Beds</h3>
+<p class="text-[10px] text-gray-500 hidden sm:block">Comfortable inpatient care</p>
+</div>
+</div>
+<div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
+<i class="fa-solid fa-child text-xl text-primary opacity-80"></i>
+<div>
+<h3 class="font-bold text-gray-800 text-xs">Children's Care</h3>
+<p class="text-[10px] text-gray-500 hidden sm:block">Pediatric treatments</p>
+</div>
+</div>
+<div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
+<i class="fa-solid fa-tooth text-xl text-secondary opacity-80"></i>
+<div>
+<h3 class="font-bold text-gray-800 text-xs">Dental Care</h3>
+<p class="text-[10px] text-gray-500 hidden sm:block">Complete oral health</p>
+</div>
+</div>
+<div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
+<i class="fa-solid fa-user-doctor text-xl text-primary opacity-80"></i>
+<div>
+<h3 class="font-bold text-gray-800 text-xs">Caring Doctors</h3>
+<p class="text-[10px] text-gray-500 hidden sm:block">Experienced specialists</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-        <!-- Mobile Nav Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full z-50">
-            <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md"><i class="fa-solid fa-house mr-2"></i> Home</a>
-                <a href="#doctors" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Doctors</a>
-                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Services</a>
-                <a href="#videos" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primaryLight rounded-md">Videos</a>
-            </div>
-        </div>
-    </header>
+<!-- CM015 - Videos Section -->
+<section id="videos" class="section-padding bg-softBg">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-6">
+<div>
+<span class="inline-block py-1 px-2.5 rounded text-red-600 bg-red-50 text-[10px] font-bold uppercase tracking-wider mb-2 border border-red-100"><i class="fa-brands fa-youtube mr-1"></i> Health Education</span>
+<h2 class="text-2xl font-bold text-gray-900">Children's Health Awareness</h2>
+<p class="text-xs text-gray-600 mt-1 max-w-xl">Free advice and health awareness for the society regarding the current generation and seasonal care.</p>
+</div>
+<a href="#" class="hidden md:inline-flex text-xs font-semibold text-red-600 hover:text-red-700 transition-colors mt-3">View Channel &rarr;</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/kKD35xn1Be0?si=zU7S5CBSVh09JaRl', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/kKD35xn1Be0/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 1</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/5IokGrmnXd8?si=BHNFGinAo74dEnD1', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/5IokGrmnXd8/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 2</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/1d8UU8mxCaw?si=rM00E5jHSH3FwhXv', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/1d8UU8mxCaw/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 3</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/Mha3B772Q44?si=difUWz5_zvNp0rrF', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/Mha3B772Q44/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 4</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/e6KcNAfSWEE?si=0nED7gK_id5OwwTs', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/e6KcNAfSWEE/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 5</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/IBnAzlQGPwA?si=Q5_ZRmBtbIHnUJqa', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/IBnAzlQGPwA/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 6</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/-UM7XUe2a9U?si=xbcPfx-3nwyqVPU8', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/-UM7XUe2a9U/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 7</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer" onclick="window.open('https://youtu.be/R6Riw7qlXpI?si=OiAwQXW-E2WS3nu3', '_blank')">
+<div class="relative h-24 sm:h-28 bg-gray-200">
+<img src="https://img.youtube.com/vi/R6Riw7qlXpI/hqdefault.jpg" alt="Video" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
+<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xs ml-0.5"></i>
+</div>
+</div>
+</div>
+<div class="p-2 sm:p-3">
+<h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Health Tips Video 8</h3>
+<p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Hero Section (Decreased Height) -->
-    <section id="home" class="relative bg-softCream overflow-hidden py-10 lg:py-14">
-        <!-- Soft background decorative elements -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primaryLight opacity-50 blur-3xl"></div>
-            <div class="absolute bottom-0 -left-24 w-72 h-72 rounded-full bg-secondaryLight opacity-50 blur-3xl"></div>
-        </div>
+<!-- CM016 - About Section -->
+<section id="about" class="section-padding bg-white border-t border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-3 h-56 md:h-72">
+<img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Building" class="rounded-lg object-cover w-full h-full shadow-sm border border-gray-100">
+<div class="space-y-3 h-full flex flex-col">
+<img src="https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png" alt="Waiting Area" class="rounded-lg object-cover w-full flex-1 shadow-sm border border-gray-100">
+<img src="https://sri-veda-org.github.io/KH/KH-ROOMS.png" alt="Hospital Rooms" class="rounded-lg object-cover w-full flex-1 shadow-sm border border-gray-100">
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-xs font-bold text-primary uppercase tracking-wider mb-2">About Us</h2>
+<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About Krishna Children's & Dental Hospital</h3>
+<div class="space-y-3 text-sm text-gray-600">
+<p>
+Located in the heart of Allagadda, Krishna Children's and Dental Hospital is a trusted healthcare center dedicated to the well-being of families. We focus primarily on comprehensive children's healthcare and professional dental care in a warm, welcoming environment.
+</p>
+<p>
+Operating across a well-organized three-floor facility, we provide daily checkups, pediatric consultations, oral health care, and medicine support. With over 20 beds available, we ensure comfortable observation and inpatient care when your little ones need it most.
+</p>
+<p class="font-medium text-gray-800 italic border-l-3 border-primaryLight pl-3 py-1">
+"A caring healthcare place for children and families."
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                <!-- Text Content -->
-                <div class="text-center lg:text-left">
-                    <span class="inline-block py-1 px-3 rounded-full bg-primaryLight text-primary text-[10px] font-semibold uppercase tracking-wider mb-3 border border-blue-100">Trusted Healthcare in Allagadda</span>
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4">
-                        Caring for Little Smiles & <br class="hidden lg:block"/> <span class="text-primary">Healthy Childhoods</span>
-                    </h2>
-                    <p class="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0">
-                        Providing safe, gentle, and expert pediatric and dental care for your family. A caring environment where your child's health comes first.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 justify-center lg:justify-start">
-                        <a href="#book-op" class="inline-flex justify-center items-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary hover:bg-sky-700 transition-colors">
-                            <i class="fa-solid fa-calendar-check mr-2"></i> Book / Contact Hospital
-                        </a>
-                        <a href="tel:9908899131" class="inline-flex justify-center items-center px-5 py-2.5 border border-primary text-sm font-medium rounded-md text-primary bg-white hover:bg-primaryLight transition-colors">
-                            <i class="fa-solid fa-phone mr-2"></i> Call 9908899131
-                        </a>
-                    </div>
-                    
-                    <div class="mt-6 flex items-center justify-center lg:justify-start space-x-5 text-xs font-medium text-gray-500">
-                        <span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> 20+ Beds</span>
-                        <span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> Children's Care</span>
-                        <span class="flex items-center"><i class="fa-solid fa-check-circle text-secondary mr-1.5"></i> Dental Care</span>
-                    </div>
-                </div>
+<!-- CM017 - Doctors Section -->
+<section id="doctors" class="section-padding bg-softCream border-t border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<h2 class="text-3xl font-bold text-gray-900 mb-2">Meet Our Doctors</h2>
+<p class="text-sm text-gray-600">Experienced specialists dedicated to providing the best medical and dental care.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+<div class="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover flex flex-col sm:flex-row shadow-sm">
+<div class="w-full sm:w-1/2 bg-primaryLight relative">
+<img src="https://placehold.co/400x500/2078b6/ffffff?text=Dr.+Krishnamohan" alt="Dr. K. Krishnamohan Reddy" class="w-full h-56 sm:h-full object-cover">
+</div>
+<div class="w-full sm:w-1/2 p-5 sm:p-6 flex flex-col justify-center">
+<div class="mb-1 uppercase text-[10px] font-bold text-primary tracking-wide">Pediatrician</div>
+<h3 class="text-lg font-bold text-gray-900 mb-1 leading-tight">Dr. K. Krishnamohan Reddy</h3>
+<p class="text-xs font-semibold text-gray-500 mb-2 border-b border-gray-100 pb-2">M.B.B.S., D.C.H.</p>
+<p class="text-xs text-gray-600 mb-4 line-clamp-3">Senior Children's Specialist providing expert pediatric care, from daily checkups to treatment of common childhood illnesses.</p>
+<a href="#book-op" class="mt-auto text-xs font-bold text-primary hover:text-primary transition-colors inline-flex items-center">Book Appointment <i class="fa-solid fa-arrow-right ml-1"></i></a>
+</div>
+</div>
+<div class="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover flex flex-col sm:flex-row shadow-sm">
+<div class="w-full sm:w-1/2 bg-secondaryLight relative">
+<img src="https://placehold.co/400x500/2078b6/ffffff?text=Dr.+Laxmipriyanka" alt="Dr. M. Laxmipriyanka" class="w-full h-56 sm:h-full object-cover">
+</div>
+<div class="w-full sm:w-1/2 p-5 sm:p-6 flex flex-col justify-center">
+<div class="mb-1 uppercase text-[10px] font-bold text-secondary tracking-wide">Dental Surgeon</div>
+<h3 class="text-lg font-bold text-gray-900 mb-1 leading-tight">Dr. M. Laxmipriyanka</h3>
+<p class="text-xs font-semibold text-gray-500 mb-2 border-b border-gray-100 pb-2">B.D.S.</p>
+<p class="text-xs text-gray-600 mb-4 line-clamp-3">Oral Health Specialist focusing on children's dental checkups, preventive care, and family oral hygiene education.</p>
+<a href="#book-op" class="mt-auto text-xs font-bold text-secondary hover:text-secondary transition-colors inline-flex items-center">Book Appointment <i class="fa-solid fa-arrow-right ml-1"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-                <!-- Image Content -->
-                <div class="relative mx-auto w-full max-w-md lg:max-w-none">
-                    <div class="relative bg-white p-2 rounded-2xl shadow-lg border border-gray-50">
-                        <img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Front View" class="rounded-xl w-full h-auto max-h-[350px] object-cover border border-gray-100">
-                        <!-- Floating Badge -->
-                        <div class="absolute -bottom-5 -left-5 bg-white p-3 rounded-lg shadow-md flex items-center space-x-2 border border-gray-50">
-                            <div class="bg-secondaryLight p-2 rounded-full text-secondary">
-                                <i class="fa-solid fa-shield-heart text-lg"></i>
-                            </div>
-                            <div>
-                                <p class="text-[10px] text-gray-500 font-medium uppercase">Family Focused</p>
-                                <p class="text-xs font-bold text-gray-800">Experienced Doctors</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CM018 - Book OP Section -->
+<section id="book-op" class="py-10 bg-primaryLight/30 border-y border-blue-100">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-xl shadow-md border border-blue-50 overflow-hidden">
+<div class="bg-primary px-5 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<i class="fa-solid fa-notes-medical text-white text-xl mr-3 opacity-90"></i>
+<h2 class="text-lg font-bold text-white">OP Registration</h2>
+</div>
+<span class="text-blue-100 text-[10px] uppercase font-semibold tracking-wider">Fast & Easy</span>
+</div>
+<div class="p-5 md:p-6">
+<form action="#" method="POST" onsubmit="event.preventDefault(); alert('OP Appointment successfully booked!');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+<div>
+<label for="doctor" class="block text-xs font-bold text-gray-700 mb-1">Select Doctor <span class="text-red-500">*</span></label>
+<select id="doctor" name="doctor" class="hd-input w-full px-3 py-2 text-sm rounded-md" required>
+<option value="" disabled selected>-- Select --</option>
+<option value="krishnamohan">Dr. K. Krishnamohan Reddy</option>
+<option value="laxmipriyanka">Dr. M. Laxmipriyanka</option>
+</select>
+</div>
+<div>
+<label for="patientName" class="block text-xs font-bold text-gray-700 mb-1">Patient Full Name <span class="text-red-500">*</span></label>
+<input type="text" id="patientName" name="patientName" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Enter full name" required>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5">
+<div>
+<label for="patientAge" class="block text-xs font-bold text-gray-700 mb-1">Age <span class="text-red-500">*</span></label>
+<input type="number" id="patientAge" name="patientAge" min="0" max="120" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Yrs" required>
+</div>
+<div>
+<label for="patientGender" class="block text-xs font-bold text-gray-700 mb-1">Gender <span class="text-red-500">*</span></label>
+<select id="patientGender" name="patientGender" class="hd-input w-full px-3 py-2 text-sm rounded-md" required>
+<option value="" disabled selected>Select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label for="patientPhone" class="block text-xs font-bold text-gray-700 mb-1">Phone <span class="text-red-500">*</span></label>
+<input type="tel" id="patientPhone" name="patientPhone" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="10-digit number" pattern="[0-9]{10}" required>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label for="patientVillage" class="block text-xs font-bold text-gray-700 mb-1">Village/Town <span class="text-red-500">*</span></label>
+<input type="text" id="patientVillage" name="patientVillage" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Location" required>
+</div>
+</div>
+<div class="flex justify-end">
+<button type="submit" class="w-full md:w-auto bg-primary text-white px-8 py-2.5 rounded-md font-bold text-sm hover:bg-primary transition-colors shadow-sm flex items-center justify-center">
+Book Now <i class="fa-solid fa-arrow-right ml-2"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Quick Information Bar -->
-    <div class="bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-4">
-                <div class="flex items-center space-x-3 justify-center md:justify-start">
-                    <i class="fa-solid fa-bed-pulse text-xl text-primary opacity-80"></i>
-                    <div>
-                        <h3 class="font-bold text-gray-800 text-xs">20+ Beds</h3>
-                        <p class="text-[10px] text-gray-500 hidden sm:block">Comfortable inpatient care</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
-                    <i class="fa-solid fa-child text-xl text-primary opacity-80"></i>
-                    <div>
-                        <h3 class="font-bold text-gray-800 text-xs">Children's Care</h3>
-                        <p class="text-[10px] text-gray-500 hidden sm:block">Pediatric treatments</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
-                    <i class="fa-solid fa-tooth text-xl text-secondary opacity-80"></i>
-                    <div>
-                        <h3 class="font-bold text-gray-800 text-xs">Dental Care</h3>
-                        <p class="text-[10px] text-gray-500 hidden sm:block">Complete oral health</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3 justify-center md:justify-start border-l-0 md:border-l border-gray-100 pl-0 md:pl-4">
-                    <i class="fa-solid fa-user-doctor text-xl text-primary opacity-80"></i>
-                    <div>
-                        <h3 class="font-bold text-gray-800 text-xs">Caring Doctors</h3>
-                        <p class="text-[10px] text-gray-500 hidden sm:block">Experienced specialists</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- CM019 - Services Section -->
+<section id="services" class="bg-softBg section-padding border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-12">
+<div class="flex items-center mb-6">
+<i class="fa-solid fa-stethoscope text-2xl text-primary mr-3"></i>
+<h2 class="text-2xl font-bold text-gray-900">Children's Healthcare</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+<div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
+<i class="fa-solid fa-user-nurse text-primary mb-2 text-xl"></i>
+<h4 class="font-bold text-gray-800 text-xs mb-1">Pediatric Consult</h4>
+<p class="text-[10px] text-gray-500">Expert child assessment.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
+<i class="fa-solid fa-heart-pulse text-primary mb-2 text-xl"></i>
+<h4 class="font-bold text-gray-800 text-xs mb-1">Health Checkups</h4>
+<p class="text-[10px] text-gray-500">Routine physical exams.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
+<i class="fa-solid fa-thermometer text-primary mb-2 text-xl"></i>
+<h4 class="font-bold text-gray-800 text-xs mb-1">Fever & Illness Care</h4>
+<p class="text-[10px] text-gray-500">Prompt treatments.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
+<i class="fa-solid fa-apple-whole text-primary mb-2 text-xl"></i>
+<h4 class="font-bold text-gray-800 text-xs mb-1">Nutrition Guidance</h4>
+<p class="text-[10px] text-gray-500">Healthy diet advice.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center mb-6">
+<i class="fa-solid fa-tooth text-2xl text-secondary mr-3"></i>
+<h2 class="text-2xl font-bold text-gray-900">Dental & Oral Health Care</h2>
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-24 h-24 bg-secondaryLight rounded-bl-full opacity-30"></div>
+<div class="relative z-10 grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-6">
+<div class="flex items-start space-x-2">
+<i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
+<div>
+<h4 class="font-bold text-gray-800 text-sm">Dental Consultation</h4>
+<p class="text-[10px] text-gray-500">Checkups for all ages.</p>
+</div>
+</div>
+<div class="flex items-start space-x-2">
+<i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
+<div>
+<h4 class="font-bold text-gray-800 text-sm">Children's Dental</h4>
+<p class="text-[10px] text-gray-500">Gentle dentistry to ease anxiety.</p>
+</div>
+</div>
+<div class="flex items-start space-x-2">
+<i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
+<div>
+<h4 class="font-bold text-gray-800 text-sm">Preventive Care</h4>
+<p class="text-[10px] text-gray-500">Cleaning & cavity protection.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Health Education Videos (Moved above About Us, 8 Small Videos) -->
-    <section id="videos" class="section-padding bg-softBg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-6">
-                <div>
-                    <span class="inline-block py-1 px-2.5 rounded text-red-600 bg-red-50 text-[10px] font-bold uppercase tracking-wider mb-2 border border-red-100"><i class="fa-brands fa-youtube mr-1"></i> Health Education</span>
-                    <h2 class="text-2xl font-bold text-gray-900">Children's Health Awareness</h2>
-                    <p class="text-xs text-gray-600 mt-1 max-w-xl">Free advice and health awareness for the society regarding the current generation and seasonal care.</p>
-                </div>
-                <a href="#" class="hidden md:inline-flex text-xs font-semibold text-red-600 hover:text-red-700 transition-colors mt-3">View Channel &rarr;</a>
-            </div>
+<!-- CM020 - Why Choose Us Section -->
+<section class="section-padding bg-softCream border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div>
+<h2 class="text-2xl font-bold text-gray-900 mb-4">Care That Puts Children First</h2>
+<p class="text-sm text-gray-600 mb-6">Our approach focuses on creating a calm, supportive, and effective healing environment for children and peace of mind for parents.</p>
+<ul class="space-y-3">
+<li class="flex items-center">
+<i class="fa-solid fa-check-circle text-secondary mr-3"></i>
+<span class="text-gray-700 text-sm font-medium">Child-focused gentle healthcare</span>
+</li>
+<li class="flex items-center">
+<i class="fa-solid fa-check-circle text-secondary mr-3"></i>
+<span class="text-gray-700 text-sm font-medium">Experienced dedicated doctors</span>
+</li>
+<li class="flex items-center">
+<i class="fa-solid fa-check-circle text-secondary mr-3"></i>
+<span class="text-gray-700 text-sm font-medium">Pediatric & dental care under one roof</span>
+</li>
+<li class="flex items-center">
+<i class="fa-solid fa-check-circle text-secondary mr-3"></i>
+<span class="text-gray-700 text-sm font-medium">20+ beds & friendly environment</span>
+</li>
+</ul>
+</div>
+<div>
+<img src="https://sri-veda-org.github.io/KH/BABY-CARE.png" alt="Baby Care" class="rounded-xl shadow-md w-full max-h-64 object-cover border border-gray-100">
+</div>
+</div>
+</div>
+</section>
 
-            <!-- 8 Small Videos Grid (2 rows of 4) -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-                <!-- Video 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+1" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Seasonal Fever Care for Kids</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Dr. Krishnamohan</p>
-                    </div>
-                </div>
-                <!-- Video 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+2" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Child Nutrition Tips</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Healthy Diet Guide</p>
-                    </div>
-                </div>
-                <!-- Video 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+3" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Brushing Right Way</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Dr. Laxmipriyanka</p>
-                    </div>
-                </div>
-                <!-- Video 4 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+4" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Preventing Cavities in Kids</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Dental Care</p>
-                    </div>
-                </div>
-                <!-- Video 5 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+5" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Immunity Boosting Tips</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Health Advice</p>
-                    </div>
-                </div>
-                <!-- Video 6 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+6" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">When to Visit a Pediatrician</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Parent Guide</p>
-                    </div>
-                </div>
-                <!-- Video 7 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+7" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Toddler Dental Hygiene</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Oral Health</p>
-                    </div>
-                </div>
-                <!-- Video 8 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover group cursor-pointer">
-                    <div class="relative h-24 sm:h-28 bg-gray-200">
-                        <img src="https://placehold.co/400x225/cbd5e1/475569?text=Video+8" alt="Video" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 flex justify-center items-center group-hover:bg-black/30 transition-all">
-                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-play text-xs ml-0.5"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 sm:p-3">
-                        <h3 class="font-bold text-gray-900 text-xs line-clamp-2 leading-tight mb-1">Coping with Weather Changes</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1">Current Generation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CM021 - Gallery Section -->
+<section id="gallery" class="section-padding bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-6">
+<h2 class="text-2xl font-bold text-gray-900">Our Hospital Gallery</h2>
+<p class="text-sm text-gray-600 mt-1">Take a look inside our clean and welcoming facilities.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+<div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png')">
+<img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Exterior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+</div>
+<div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png')">
+<img src="https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png" alt="Waiting Hall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+</div>
+<div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-ROOMS.png')">
+<img src="https://sri-veda-org.github.io/KH/KH-ROOMS.png" alt="Hospital Rooms" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+</div>
+<div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-DENTAL-MISSION.png')">
+<img src="https://sri-veda-org.github.io/KH/KH-DENTAL-MISSION.png" alt="Dental Mission" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+</div>
+</div>
+</div>
+</section>
 
-    <!-- About Section (Decreased Height) -->
-    <section id="about" class="section-padding bg-white border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="grid grid-cols-2 gap-3 h-56 md:h-72">
-                        <img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Building" class="rounded-lg object-cover w-full h-full shadow-sm border border-gray-100">
-                        <div class="space-y-3 h-full flex flex-col">
-                            <img src="https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png" alt="Waiting Area" class="rounded-lg object-cover w-full flex-1 shadow-sm border border-gray-100">
-                            <img src="https://sri-veda-org.github.io/KH/KH-ROOMS.png" alt="Hospital Rooms" class="rounded-lg object-cover w-full flex-1 shadow-sm border border-gray-100">
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <h2 class="text-xs font-bold text-primary uppercase tracking-wider mb-2">About Us</h2>
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About Krishna Children's & Dental Hospital</h3>
-                    <div class="space-y-3 text-sm text-gray-600">
-                        <p>
-                            Located in the heart of Allagadda, Krishna Children's and Dental Hospital is a trusted healthcare center dedicated to the well-being of families. We focus primarily on comprehensive children's healthcare and professional dental care in a warm, welcoming environment.
-                        </p>
-                        <p>
-                            Operating across a well-organized three-floor facility, we provide daily checkups, pediatric consultations, oral health care, and medicine support. With over 20 beds available, we ensure comfortable observation and inpatient care when your little ones need it most.
-                        </p>
-                        <p class="font-medium text-gray-800 italic border-l-3 border-primaryLight pl-3 py-1">
-                            "A caring healthcare place for children and families."
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CM022 - Lightbox -->
+<div id="lightbox" class="fixed inset-0 z-[60] bg-black bg-opacity-90 items-center justify-center p-4">
+<button onclick="closeLightbox()" class="absolute top-4 right-6 text-white text-4xl hover:text-gray-300">&times;</button>
+<img id="lightbox-img" src="" alt="Full size" class="max-w-full max-h-[90vh] object-contain rounded">
+</div>
 
-    <!-- Our Doctors Section (Increased Photo Width) -->
-    <section id="doctors" class="section-padding bg-softCream border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-10">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Meet Our Doctors</h2>
-                <p class="text-sm text-gray-600">Experienced specialists dedicated to providing the best medical and dental care.</p>
-            </div>
+<!-- CM023 - Timings and Location -->
+<section class="section-padding bg-softBg border-t border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<div>
+<div class="flex items-center mb-5">
+<i class="fa-regular fa-clock text-xl text-primary mr-2"></i>
+<h2 class="text-2xl font-bold text-gray-900">Hospital Timings</h2>
+</div>
+<div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+<table class="w-full text-left border-collapse text-sm">
+<tbody>
+<tr class="border-b border-gray-100">
+<td class="py-3 font-bold text-gray-800">General Consultation</td>
+<td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-3 font-bold text-gray-800">Children's Specialist</td>
+<td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-3 font-bold text-gray-800">Dental Consultation</td>
+<td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
+</tr>
+<tr>
+<td class="py-3 font-bold text-red-600">Sundays</td>
+<td class="py-3 text-red-500 font-medium text-right">9:00 AM - 2:00 PM</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div class="flex items-center mb-5">
+<i class="fa-solid fa-location-dot text-xl text-secondary mr-2"></i>
+<h2 class="text-2xl font-bold text-gray-900">Visit Us</h2>
+</div>
+<div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm h-[250px] flex flex-col">
+<div class="w-full flex-1 bg-gray-200 relative">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.646700547051!2d78.57567845!3d15.1322234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb467eb1fc8f813%3A0x6b4fb8a6eb7f2d34!2sAllagadda%2C%20Andhra%20Pradesh%20518543!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="p-4 bg-white border-t border-gray-100">
+<p class="text-xs text-gray-600 font-medium leading-relaxed">
+Opp. RTC Bus Depot, Kadapa Road, Allagadda, Nandyala District, AP - 518543.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                <!-- Doctor 1 -->
-                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover flex flex-col sm:flex-row shadow-sm">
-                    <div class="w-full sm:w-1/2 bg-primaryLight relative">
-                        <img src="https://placehold.co/400x500/0284c7/ffffff?text=Dr.+Krishnamohan" alt="Dr. K. Krishnamohan Reddy" class="w-full h-56 sm:h-full object-cover">
-                    </div>
-                    <div class="w-full sm:w-1/2 p-5 sm:p-6 flex flex-col justify-center">
-                        <div class="mb-1 uppercase text-[10px] font-bold text-primary tracking-wide">Pediatrician</div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1 leading-tight">Dr. K. Krishnamohan Reddy</h3>
-                        <p class="text-xs font-semibold text-gray-500 mb-2 border-b border-gray-100 pb-2">M.B.B.S., D.C.H.</p>
-                        <p class="text-xs text-gray-600 mb-4 line-clamp-3">Senior Children's Specialist providing expert pediatric care, from daily checkups to treatment of common childhood illnesses.</p>
-                        <a href="#book-op" class="mt-auto text-xs font-bold text-primary hover:text-sky-800 transition-colors inline-flex items-center">Book Appointment <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
+<!-- CM024 - Contact Section -->
+<section id="contact" class="py-10 bg-white border-t border-gray-100">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6">
+<h2 class="text-2xl font-bold text-gray-900 mb-2">We're Here to Help</h2>
+<p class="text-sm text-gray-600">Reach out for inquiries or assistance. Call directly at <a href="tel:9908899131" class="font-bold text-primary">9908899131</a></p>
+</div>
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<form action="#" method="POST" class="bg-softBg p-5 rounded-xl border border-gray-100 shadow-sm" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+<div>
+<input type="text" id="name" name="name" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Your Full Name" required>
+</div>
+<div>
+<input type="tel" id="phone" name="phone" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Your Phone Number" required>
+</div>
+</div>
+<div class="mb-4">
+<textarea id="message" name="message" rows="2" class="hd-input w-full px-3 py-2 text-sm rounded-md resize-none" placeholder="How can we help you?" required></textarea>
+</div>
+<div class="text-right">
+<button type="submit" class="bg-gray-900 text-white px-6 py-2 rounded-md text-sm font-bold hover:bg-gray-800 transition-colors shadow-sm">
+Send Message
+</button>
+</div>
+</form>
+</div>
+</section>
 
-                <!-- Doctor 2 -->
-                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover flex flex-col sm:flex-row shadow-sm">
-                    <div class="w-full sm:w-1/2 bg-secondaryLight relative">
-                        <img src="https://placehold.co/400x500/0d9488/ffffff?text=Dr.+Laxmipriyanka" alt="Dr. M. Laxmipriyanka" class="w-full h-56 sm:h-full object-cover">
-                    </div>
-                    <div class="w-full sm:w-1/2 p-5 sm:p-6 flex flex-col justify-center">
-                        <div class="mb-1 uppercase text-[10px] font-bold text-secondary tracking-wide">Dental Surgeon</div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1 leading-tight">Dr. M. Laxmipriyanka</h3>
-                        <p class="text-xs font-semibold text-gray-500 mb-2 border-b border-gray-100 pb-2">B.D.S.</p>
-                        <p class="text-xs text-gray-600 mb-4 line-clamp-3">Oral Health Specialist focusing on children's dental checkups, preventive care, and family oral hygiene education.</p>
-                        <a href="#book-op" class="mt-auto text-xs font-bold text-secondary hover:text-teal-800 transition-colors inline-flex items-center">Book Appointment <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CM025 - Footer Section -->
+<footer class="bg-softCream text-gray-800 pt-10 pb-24 md:pb-6 border-t border-blue-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+<div class="md:col-span-1">
+<div class="flex items-center space-x-2 mb-3 bg-white p-1.5 rounded-lg inline-flex border border-gray-100 shadow-sm">
+<img src="https://sri-veda-org.github.io/KH/KH-LOGO-MAIN.png" alt="Logo" class="h-8 w-auto object-contain">
+</div>
+<h3 class="font-bold text-sm mb-1 text-primary">Krishna Children's & Dental Hospital</h3>
+<h4 class="font-telugu text-[10px] text-secondary mb-3">కృష్ణ చిన్న పిల్లల హాస్పిటల్ మరియు దంత వైద్యశాల</h4>
+<p class="text-gray-500 text-xs">A trusted, caring place for children's healthcare and dental care.</p>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-3 text-gray-900">Quick Links</h4>
+<ul class="space-y-1.5 text-xs text-gray-600">
+<li><a href="#home" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Home</a></li>
+<li><a href="#doctors" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Doctors</a></li>
+<li><a href="#services" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Services</a></li>
+<li><a href="#videos" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Health Videos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-3 text-gray-900">Contact Info</h4>
+<ul class="space-y-2 text-xs text-gray-600 mb-4">
+<li class="flex items-start"><i class="fa-solid fa-location-dot mt-0.5 mr-2 text-primary w-3 text-center"></i> Opp. RTC Bus Depot, Allagadda</li>
+<li class="flex items-center"><i class="fa-solid fa-phone mr-2 text-primary w-3 text-center"></i> 9908899131</li>
+</ul>
+<div class="flex space-x-3 text-sm">
+<a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors shadow-sm" title="YouTube"><i class="fa-brands fa-youtube text-xs"></i></a>
+<a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors shadow-sm" title="Instagram"><i class="fa-brands fa-instagram text-xs"></i></a>
+<a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors shadow-sm" title="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+<a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-colors shadow-sm" title="WhatsApp"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-200 pt-4 flex justify-center md:justify-end">
+<p class="text-xs text-gray-500">&copy; 2026 Krishna Children's & Dental Hospital. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
 
-    <!-- Book OP Section (Decreased Height, HD Layout, Smart Fields) -->
-    <section id="book-op" class="py-10 bg-primaryLight/30 border-y border-blue-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-xl shadow-md border border-blue-50 overflow-hidden">
-                <!-- Header -->
-                <div class="bg-primary px-5 py-3 flex items-center justify-between">
-                    <div class="flex items-center">
-                        <i class="fa-solid fa-notes-medical text-white text-xl mr-3 opacity-90"></i>
-                        <h2 class="text-lg font-bold text-white">OP Registration</h2>
-                    </div>
-                    <span class="text-blue-100 text-[10px] uppercase font-semibold tracking-wider">Fast & Easy</span>
-                </div>
-                
-                <!-- HD Compact Registration Form -->
-                <div class="p-5 md:p-6">
-                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('OP Appointment successfully booked!');">
-                        <!-- Row 1: Doctor & Name -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <div>
-                                <label for="doctor" class="block text-xs font-bold text-gray-700 mb-1">Select Doctor <span class="text-red-500">*</span></label>
-                                <select id="doctor" name="doctor" class="hd-input w-full px-3 py-2 text-sm rounded-md" required>
-                                    <option value="" disabled selected>-- Select --</option>
-                                    <option value="krishnamohan">Dr. K. Krishnamohan Reddy</option>
-                                    <option value="laxmipriyanka">Dr. M. Laxmipriyanka</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="patientName" class="block text-xs font-bold text-gray-700 mb-1">Patient Full Name <span class="text-red-500">*</span></label>
-                                <input type="text" id="patientName" name="patientName" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Enter full name" required>
-                            </div>
-                        </div>
+<!-- CM026 - Mobile Bottom Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50 flex">
+<a href="tel:9908899131" class="flex-1 py-3 flex flex-col items-center justify-center text-primary hover:bg-gray-50 transition-colors">
+<i class="fa-solid fa-phone mb-1 text-lg"></i>
+<span class="text-[10px] font-bold uppercase">Call Now</span>
+</a>
+<div class="w-px bg-gray-200"></div>
+<a href="#book-op" class="flex-1 py-3 flex flex-col items-center justify-center text-secondary hover:bg-gray-50 transition-colors">
+<i class="fa-solid fa-calendar-check mb-1 text-lg"></i>
+<span class="text-[10px] font-bold uppercase">Book OP</span>
+</a>
+<div class="w-px bg-gray-200"></div>
+<a href="#contact" class="flex-1 py-3 flex flex-col items-center justify-center text-gray-600 hover:bg-gray-50 transition-colors">
+<i class="fa-regular fa-envelope mb-1 text-lg"></i>
+<span class="text-[10px] font-bold uppercase">Contact</span>
+</a>
+</div>
 
-                        <!-- Row 2: Age, Gender, Phone, Village -->
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5">
-                            <div>
-                                <label for="patientAge" class="block text-xs font-bold text-gray-700 mb-1">Age <span class="text-red-500">*</span></label>
-                                <input type="number" id="patientAge" name="patientAge" min="0" max="120" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Yrs" required>
-                            </div>
-                            <div>
-                                <label for="patientGender" class="block text-xs font-bold text-gray-700 mb-1">Gender <span class="text-red-500">*</span></label>
-                                <select id="patientGender" name="patientGender" class="hd-input w-full px-3 py-2 text-sm rounded-md" required>
-                                    <option value="" disabled selected>Select</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                </select>
-                            </div>
-                            <div class="col-span-2 md:col-span-1">
-                                <label for="patientPhone" class="block text-xs font-bold text-gray-700 mb-1">Phone <span class="text-red-500">*</span></label>
-                                <input type="tel" id="patientPhone" name="patientPhone" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="10-digit number" pattern="[0-9]{10}" required>
-                            </div>
-                            <div class="col-span-2 md:col-span-1">
-                                <label for="patientVillage" class="block text-xs font-bold text-gray-700 mb-1">Village/Town <span class="text-red-500">*</span></label>
-                                <input type="text" id="patientVillage" name="patientVillage" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Location" required>
-                            </div>
-                        </div>
+<!-- CM027 - Scripts -->
+<script>
+/* CM028 - Mobile Menu Logic */
+const btn = document.getElementById('mobile-menu-btn'); const menu = document.getElementById('mobile-menu'); const icon = btn.querySelector('i'); btn.addEventListener('click', () => { menu.classList.toggle('hidden'); if (menu.classList.contains('hidden')) { icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars'); } else { icon.classList.remove('fa-bars'); icon.classList.add('fa-xmark'); } }); const mobileLinks = menu.querySelectorAll('a'); mobileLinks.forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars'); }); });
 
-                        <!-- Row 3: Submit Button -->
-                        <div class="flex justify-end">
-                            <button type="submit" class="w-full md:w-auto bg-primary text-white px-8 py-2.5 rounded-md font-bold text-sm hover:bg-sky-700 transition-colors shadow-sm flex items-center justify-center">
-                                Book Now <i class="fa-solid fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+/* CM029 - Lightbox Logic */
+const lightbox = document.getElementById('lightbox'); const lightboxImg = document.getElementById('lightbox-img'); function openLightbox(imgSrc) { lightboxImg.src = imgSrc; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; } function closeLightbox() { lightbox.classList.remove('active'); document.body.style.overflow = 'auto'; } lightbox.addEventListener('click', (e) => { if (e.target === lightbox) { closeLightbox(); } }); document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lightbox.classList.contains('active')) { closeLightbox(); } });
 
-    <!-- Services Sections -->
-    <section id="services" class="bg-softBg section-padding border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Children's Healthcare -->
-            <div class="mb-12">
-                <div class="flex items-center mb-6">
-                    <i class="fa-solid fa-stethoscope text-2xl text-primary mr-3"></i>
-                    <h2 class="text-2xl font-bold text-gray-900">Children's Healthcare</h2>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
-                        <i class="fa-solid fa-user-nurse text-primary mb-2 text-xl"></i>
-                        <h4 class="font-bold text-gray-800 text-xs mb-1">Pediatric Consult</h4>
-                        <p class="text-[10px] text-gray-500">Expert child assessment.</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
-                        <i class="fa-solid fa-heart-pulse text-primary mb-2 text-xl"></i>
-                        <h4 class="font-bold text-gray-800 text-xs mb-1">Health Checkups</h4>
-                        <p class="text-[10px] text-gray-500">Routine physical exams.</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
-                        <i class="fa-solid fa-thermometer text-primary mb-2 text-xl"></i>
-                        <h4 class="font-bold text-gray-800 text-xs mb-1">Fever & Illness Care</h4>
-                        <p class="text-[10px] text-gray-500">Prompt treatments.</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm text-center">
-                        <i class="fa-solid fa-apple-whole text-primary mb-2 text-xl"></i>
-                        <h4 class="font-bold text-gray-800 text-xs mb-1">Nutrition Guidance</h4>
-                        <p class="text-[10px] text-gray-500">Healthy diet advice.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dental Care -->
-            <div>
-                 <div class="flex items-center mb-6">
-                    <i class="fa-solid fa-tooth text-2xl text-secondary mr-3"></i>
-                    <h2 class="text-2xl font-bold text-gray-900">Dental & Oral Health Care</h2>
-                </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 relative overflow-hidden">
-                    <div class="absolute right-0 top-0 w-24 h-24 bg-secondaryLight rounded-bl-full opacity-30"></div>
-                    <div class="relative z-10 grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-6">
-                        <div class="flex items-start space-x-2">
-                            <i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-sm">Dental Consultation</h4>
-                                <p class="text-[10px] text-gray-500">Checkups for all ages.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-sm">Children's Dental</h4>
-                                <p class="text-[10px] text-gray-500">Gentle dentistry to ease anxiety.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i class="fa-solid fa-check text-secondary mt-1 text-sm"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-sm">Preventive Care</h4>
-                                <p class="text-[10px] text-gray-500">Cleaning & cavity protection.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Parents Choose Us -->
-    <section class="section-padding bg-softCream border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Care That Puts Children First</h2>
-                    <p class="text-sm text-gray-600 mb-6">Our approach focuses on creating a calm, supportive, and effective healing environment for children and peace of mind for parents.</p>
-                    
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-check-circle text-secondary mr-3"></i>
-                            <span class="text-gray-700 text-sm font-medium">Child-focused gentle healthcare</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-check-circle text-secondary mr-3"></i>
-                            <span class="text-gray-700 text-sm font-medium">Experienced dedicated doctors</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-check-circle text-secondary mr-3"></i>
-                            <span class="text-gray-700 text-sm font-medium">Pediatric & dental care under one roof</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa-solid fa-check-circle text-secondary mr-3"></i>
-                            <span class="text-gray-700 text-sm font-medium">20+ beds & friendly environment</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="https://sri-veda-org.github.io/KH/KH-DENTAL-MISSION.png" alt="Dental Care Mission" class="rounded-xl shadow-md w-full max-h-64 object-cover border border-gray-100">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hospital Gallery (4 Photos Only) -->
-    <section id="gallery" class="section-padding bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900">Our Hospital Gallery</h2>
-                <p class="text-sm text-gray-600 mt-1">Take a look inside our clean and welcoming facilities.</p>
-            </div>
-
-            <!-- 4 Images Grid -->
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-                <div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png')">
-                    <img src="https://sri-veda-org.github.io/KH/KH-FRENT-VIEW.png" alt="Hospital Exterior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png')">
-                    <img src="https://sri-veda-org.github.io/KH/KH-OP-WAITING-HALL.png" alt="Waiting Hall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-ROOMS.png')">
-                    <img src="https://sri-veda-org.github.io/KH/KH-ROOMS.png" alt="Hospital Rooms" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="cursor-pointer overflow-hidden rounded-lg bg-gray-100 border border-gray-50 h-32 md:h-40" onclick="openLightbox('https://sri-veda-org.github.io/KH/KH-DENTAL-MISSION.png')">
-                    <img src="https://sri-veda-org.github.io/KH/KH-DENTAL-MISSION.png" alt="Dental Mission" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-[60] bg-black bg-opacity-90 items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-4 right-6 text-white text-4xl hover:text-gray-300">&times;</button>
-        <img id="lightbox-img" src="" alt="Full size" class="max-w-full max-h-[90vh] object-contain rounded">
-    </div>
-
-    <!-- Timings & Location Section -->
-    <section class="section-padding bg-softBg border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                
-                <!-- Timings (Updated exactly to specification) -->
-                <div>
-                    <div class="flex items-center mb-5">
-                        <i class="fa-regular fa-clock text-xl text-primary mr-2"></i>
-                        <h2 class="text-2xl font-bold text-gray-900">Hospital Timings</h2>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
-                        <table class="w-full text-left border-collapse text-sm">
-                            <tbody>
-                                <tr class="border-b border-gray-100">
-                                    <td class="py-3 font-bold text-gray-800">General Consultation</td>
-                                    <td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
-                                </tr>
-                                <tr class="border-b border-gray-100">
-                                    <td class="py-3 font-bold text-gray-800">Children's Specialist</td>
-                                    <td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
-                                </tr>
-                                <tr class="border-b border-gray-100">
-                                    <td class="py-3 font-bold text-gray-800">Dental Consultation</td>
-                                    <td class="py-3 text-gray-600 text-right">9:00 AM - 2:00 PM<br>5:00 PM - 8:30 PM</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 font-bold text-red-600">Sundays</td>
-                                    <td class="py-3 text-red-500 font-medium text-right">9:00 AM - 2:00 PM</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Location -->
-                <div>
-                     <div class="flex items-center mb-5">
-                        <i class="fa-solid fa-location-dot text-xl text-secondary mr-2"></i>
-                        <h2 class="text-2xl font-bold text-gray-900">Visit Us</h2>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm h-[250px] flex flex-col">
-                        <!-- Embedded Google Map targeting Allagadda context -->
-                        <div class="w-full flex-1 bg-gray-200 relative">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.646700547051!2d78.57567845!3d15.1322234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb467eb1fc8f813%3A0x6b4fb8a6eb7f2d34!2sAllagadda%2C%20Andhra%20Pradesh%20518543!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                                width="100%" 
-                                height="100%" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                        <div class="p-4 bg-white border-t border-gray-100">
-                            <p class="text-xs text-gray-600 font-medium leading-relaxed">
-                                Opp. RTC Bus Depot, Kadapa Road, Allagadda, Nandyala District, AP - 518543.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Compact Contact Section (HD Form) -->
-    <section id="contact" class="py-10 bg-white border-t border-gray-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">We're Here to Help</h2>
-            <p class="text-sm text-gray-600">Reach out for inquiries or assistance. Call directly at <a href="tel:9908899131" class="font-bold text-primary">9908899131</a></p>
-        </div>
-        
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <form action="#" method="POST" class="bg-softBg p-5 rounded-xl border border-gray-100 shadow-sm" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                        <input type="text" id="name" name="name" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Your Full Name" required>
-                    </div>
-                    <div>
-                        <input type="tel" id="phone" name="phone" class="hd-input w-full px-3 py-2 text-sm rounded-md" placeholder="Your Phone Number" required>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <textarea id="message" name="message" rows="2" class="hd-input w-full px-3 py-2 text-sm rounded-md resize-none" placeholder="How can we help you?" required></textarea>
-                </div>
-                <div class="text-right">
-                    <button type="submit" class="bg-gray-900 text-white px-6 py-2 rounded-md text-sm font-bold hover:bg-gray-800 transition-colors shadow-sm">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-softCream text-gray-800 pt-10 pb-24 md:pb-6 border-t border-blue-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                
-                <!-- Brand -->
-                <div class="md:col-span-1">
-                    <div class="flex items-center space-x-2 mb-3 bg-white p-1.5 rounded-lg inline-flex border border-gray-100 shadow-sm">
-                        <img src="https://sri-veda-org.github.io/KH/KH-LOGO.png" alt="Logo" class="h-8 w-auto object-contain">
-                    </div>
-                    <h3 class="font-bold text-sm mb-1 text-primary">Krishna Children's & Dental Hospital</h3>
-                    <h4 class="font-telugu text-[10px] text-secondary mb-3">కృష్ణ చిన్న పిల్లల హాస్పిటల్ మరియు దంత వైద్యశాల</h4>
-                    <p class="text-gray-500 text-xs">A trusted, caring place for children's healthcare and dental care.</p>
-                </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="font-bold text-sm mb-3 text-gray-900">Quick Links</h4>
-                    <ul class="space-y-1.5 text-xs text-gray-600">
-                        <li><a href="#home" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Home</a></li>
-                        <li><a href="#doctors" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Doctors</a></li>
-                        <li><a href="#services" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Services</a></li>
-                        <li><a href="#videos" class="hover:text-primary transition-colors"><i class="fa-solid fa-angle-right text-[10px] mr-1 text-primary"></i> Health Videos</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact & Social -->
-                <div>
-                    <h4 class="font-bold text-sm mb-3 text-gray-900">Contact Info</h4>
-                    <ul class="space-y-2 text-xs text-gray-600 mb-4">
-                        <li class="flex items-start"><i class="fa-solid fa-location-dot mt-0.5 mr-2 text-primary w-3 text-center"></i> Opp. RTC Bus Depot, Allagadda</li>
-                        <li class="flex items-center"><i class="fa-solid fa-phone mr-2 text-primary w-3 text-center"></i> 9908899131</li>
-                    </ul>
-                    
-                    <!-- Styled Social Links (Matching Header) -->
-                    <div class="flex space-x-3 text-sm">
-                        <a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors shadow-sm" title="YouTube"><i class="fa-brands fa-youtube text-xs"></i></a>
-                        <a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors shadow-sm" title="Instagram"><i class="fa-brands fa-instagram text-xs"></i></a>
-                        <a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors shadow-sm" title="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                        <a href="#" class="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-colors shadow-sm" title="WhatsApp"><i class="fa-brands fa-whatsapp text-xs"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Copyright mapped to Right side -->
-            <div class="border-t border-gray-200 pt-4 flex justify-center md:justify-end">
-                <p class="text-xs text-gray-500">&copy; 2026 Krishna Children's & Dental Hospital. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Fixed Bottom Action Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50 flex">
-        <a href="tel:9908899131" class="flex-1 py-3 flex flex-col items-center justify-center text-primary hover:bg-gray-50 transition-colors">
-            <i class="fa-solid fa-phone mb-1 text-lg"></i>
-            <span class="text-[10px] font-bold uppercase">Call Now</span>
-        </a>
-        <div class="w-px bg-gray-200"></div>
-        <a href="#book-op" class="flex-1 py-3 flex flex-col items-center justify-center text-secondary hover:bg-gray-50 transition-colors">
-            <i class="fa-solid fa-calendar-check mb-1 text-lg"></i>
-            <span class="text-[10px] font-bold uppercase">Book OP</span>
-        </a>
-        <div class="w-px bg-gray-200"></div>
-        <a href="#contact" class="flex-1 py-3 flex flex-col items-center justify-center text-gray-600 hover:bg-gray-50 transition-colors">
-            <i class="fa-regular fa-envelope mb-1 text-lg"></i>
-            <span class="text-[10px] font-bold uppercase">Contact</span>
-        </a>
-    </div>
-
-    <!-- Scripts -->
-    <script>
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn.querySelector('i');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            }
-        });
-
-        // Close mobile menu on link click
-        const mobileLinks = menu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            });
-        });
-
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        function openLightbox(imgSrc) {
-            lightboxImg.src = imgSrc;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; 
-        }
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto'; 
-        }
-
-        // Close lightbox on clicking outside image or pressing Escape
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
-        
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                closeLightbox();
-            }
-        });
-        
-        // PWA Install Prompt Handling
-        let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent the mini-infobar from appearing on mobile
-            e.preventDefault();
-            // Stash the event so it can be triggered later.
-            deferredPrompt = e;
-            // Optionally, update UI notify the user they can install the PWA
-            // console.log("PWA ready to install");
-            
-            // To auto-prompt (browsers usually handle this automatically now with the manifest):
-            // deferredPrompt.prompt();
-        });
-    </script>
+/* CM030 - PWA Logic */
+let deferredPrompt; window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+</script>
 </body>
 </html>
